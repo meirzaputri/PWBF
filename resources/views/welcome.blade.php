@@ -13,7 +13,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
-    <title>Hello, world!</title>
+<link rel="stylesheet" href="css/event.css">
+    <title>Volunteer-an</title>
   </head>
   <body>
    @include('partials.navbar')
@@ -23,6 +24,9 @@
        {{-- @include('partials.features') --}}
        @include('partials.events')
        @include('partials.callactions')
+       @include('partials.contactus')
+       
+
        
     
 
