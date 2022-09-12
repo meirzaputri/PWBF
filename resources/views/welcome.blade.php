@@ -19,9 +19,10 @@
    @include('partials.navbar')
    @include('partials.hero')
    <main id="main">
-       {{-- @include('partials.about')
-       @include('partials.features') --}}
-       @include('partials.service')
+       @include('partials.about')
+       {{-- @include('partials.features') --}}
+       @include('partials.events')
+       @include('partials.callactions')
        
     
 

@@ -1,10 +1,10 @@
 <!-- ======= Services Section ======= -->
-<section id="services" class="services">
+<section id="events" class="events">
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
-        <h2>Services</h2>
-        <p>Check our Services</p>
+        <h2>Events</h2>
+        <p>Check our Events</p>
       </div>
 
       <div class="row">
