@@ -6,7 +6,7 @@
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
         <div class="col-xl-6 col-lg-7">
           <h1>Be The Reason Someone<span> Smiles </span>Today</h1>
-          <h2>We are team of talented digital marketers</h2>
+          <h2>- Menjadi Relawan Untuk Negeri -</h2>
         </div>
       </div>
 

@@ -8,7 +8,7 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch bg-cust" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch " style="background-image: url(img/about.jpg); background-size=10px" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box">
             {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
             <h4><a href="">Peduli Pendidikan Anak Indonesia</a></h4>

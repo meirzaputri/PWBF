@@ -12,9 +12,10 @@
             <b>Volunteer-an</b> merupakan web yang berfungsi sebagai sarana untuk menyebarkan kegiatan sosial dan beraksi sebagai relawan.
           </p>
           <ul>
-            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-            <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            <h3>Our Mission</h3>
+            <li><i class="ri-check-double-line"></i> Meningatkan jiwa sosial masing-masing individu</li>
+            <li><i class="ri-check-double-line"></i> Memberikan harapan dan kebahagiaan bagi mereka yang membutuhkan </li>
+            <li><i class="ri-check-double-line"></i> Bersama-sama menyelesaikan permasalahan yang sedang terjadi</li>
           </ul>
         </div>
       </div>
