@@ -7,10 +7,9 @@
           <img src="img/about.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-          <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+          <h3>Volunteer-An</h3>
           <p class="fst-italic">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
+            Sebuah website yang menyediakan berbagai kegiatan kemanusiaan dari berbagai macam organisasi. Setiap sudut negeri menanti kebaikan anda untuk mereka. Karena berbuat baik tidak perlu pandang bulu. We are all human and we just need to be kind to every kind.
           </p>
           <ul>
             <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>

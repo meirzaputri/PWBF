@@ -23,6 +23,9 @@
        {{-- @include('partials.features') --}}
        @include('partials.events')
        @include('partials.callactions')
+       @include('partials.documentation')      
+       @include('partials.counts')       
+       @include('partials.testimonial')                      
        
     
 
