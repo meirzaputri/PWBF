@@ -25,7 +25,7 @@
        @include('partials.callactions')
        @include('partials.documentation')      
        @include('partials.counts')       
-       @include('partials.testimonial')                      
+       @include('partials.organizations')                      
        
     
 
