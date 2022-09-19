@@ -12,8 +12,10 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#events">Events</a></li>
-          <li><a class="nav-link scrollto " href="#Organization">Organizations</a></li>
-          <li><a class="nav-link scrollto" href="#documentation">Documentations</a></li>
+          <li><a class="nav-link scrollto " href="#Organization">Organization</a></li>
+          <li><a class="nav-link scrollto" href="#documentation">Documentation</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
           {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -29,9 +31,13 @@
               <li><a href="#">Drop Down 2</a></li>
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li> --}}
+<<<<<<< HEAD
             {{-- </ul> --}}
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+=======
+            {{-- </ul> --}}         
+>>>>>>> f98814b86888385b6a37275c6f049512225d5309
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

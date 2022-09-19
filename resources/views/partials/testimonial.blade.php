@@ -7,7 +7,9 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+
+                <img src="img\team\team-1.jpg" class="testimonial-img" alt="">
+
                 <h3>Saul Goodman</h3>
                 <h4>Mahasiswa</h4>
                 <p>
@@ -20,7 +22,9 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+
+                <img src="img/team/team-1.jpg" class="testimonial-img" alt="">
+
                 <h3>Sara Wilsson</h3>
                 <h4>Pekerja</h4>
                 <p>
@@ -46,7 +50,9 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+
+                <img src="img/team/team-1.jpg" class="testimonial-img" alt="">
+
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
                 <p>
@@ -59,7 +65,9 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+
+                <img src="img/team/team-1.jpg" class="testimonial-img" alt="">
+
                 <h3>John Larson</h3>
                 <h4>Mahasiswa</h4>
                 <p>
@@ -74,4 +82,4 @@
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section><!-- End Testimonials Sectio n -->
