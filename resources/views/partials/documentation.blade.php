@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<section id="portfolio" class="portfolio">
-=======
 <section id="documentation" class="portfolio">
->>>>>>> f98814b86888385b6a37275c6f049512225d5309
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -48,11 +44,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-<<<<<<< HEAD
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-=======
+
               <img src="img/vol2.jpg" class="img-fluid" alt="">
->>>>>>> f98814b86888385b6a37275c6f049512225d5309
+
               <div class="portfolio-info">
                 <h4>App 2</h4>
                 <p>App</p>

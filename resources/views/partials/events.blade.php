@@ -10,16 +10,11 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch " style="background-image: url(img/about.jpg); background-size=10px" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box">
-<<<<<<< HEAD
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="">Event A</a></h4>
-            <p>Ajarkan Ilmu Sampai Ke Pelosok Daerah</p>
-            
-=======
+
             {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
             <h4><a href="">Peduli Pendidikan Anak Indonesia</a></h4>
             <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
->>>>>>> f98814b86888385b6a37275c6f049512225d5309
+
           </div>
         </div>
 
