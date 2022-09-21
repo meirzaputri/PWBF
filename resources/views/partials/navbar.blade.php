@@ -12,7 +12,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#events">Events</a></li>
-          <li><a class="nav-link scrollto " href="#Organization">Organization</a></li>
+          <li><a class="nav-link scrollto " href="#Organizations">Organization</a></li>
           <li><a class="nav-link scrollto" href="#documentation">Documentation</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
 
@@ -33,9 +33,6 @@
               <li><a href="#">Drop Down 4</a></li> --}}
 
             {{-- </ul> --}}
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
-
             {{-- </ul> --}}         
 
         </ul>

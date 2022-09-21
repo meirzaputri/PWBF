@@ -23,6 +23,8 @@
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4></h4>
+            <h4></h4>
+            <h4></h4>
             <ul>
               <strong>Phone:</strong> +1 5589 55488 55<br>
               <strong>Email:</strong> yukvolunteeran@example.com<br>
@@ -34,9 +36,9 @@
             <ul>
               <li><i class="bi bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bi bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bi bx-chevron-right"></i> <a href="#">Events</a></li>
+              <li><i class="bi bx-chevron-right"></i> <a href="#">Organizations</a></li>
+              <li><i class="bi bx-chevron-right"></i> <a href="#">Documentations</a></li>
             </ul>
           </div>
 

@@ -15,8 +15,8 @@
               <img src="img/about.jpg" class="img-fluid" alt="">
 
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
+                <h4></h4>
+                <p>Make them smile</p>
                 <div class="portfolio-links">
                   <a href="img/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
 
@@ -32,8 +32,8 @@
               <img src="img/vol1.jpeg" class="img-fluid" alt="">
 
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
+                <h4></h4>
+                <p>Sharing is Caring</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -48,8 +48,8 @@
               <img src="img/vol2.jpg" class="img-fluid" alt="">
 
               <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
+                <h4></h4>
+                <p>Let's make the environment cleaner</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -60,7 +60,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="img/vol1.jpeg" class="img-fluid" alt="">
+              <img src="img/vol4.jpeg" class="img-fluid" alt="">
 
               <div class="portfolio-info">
                 <h4>Card 2</h4>
@@ -76,7 +76,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
 
-              <img src="img/vol2.jpg" class="img-fluid" alt="">
+              <img src="img/vol5.jpg" class="img-fluid" alt="">
 
               <div class="portfolio-info">
                 <h4>Web 2</h4>
@@ -91,7 +91,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="img/about.jpg" class="img-fluid" alt="">
+              <img src="img/vol6.jpg" class="img-fluid" alt="">
 
               <div class="portfolio-info">
                 <h4>App 3</h4>
@@ -106,7 +106,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <img src="img/vol7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Card 1</h4>
                 <p>Card</p>
@@ -120,7 +120,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <img src="img/vol8.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Card 3</h4>
                 <p>Card</p>
@@ -134,7 +134,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <img src="img/vol11.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Web 3</h4>
                 <p>Web</p>
