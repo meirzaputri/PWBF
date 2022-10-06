@@ -7,55 +7,56 @@
             <p>Check Our Organizations</p>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="card col-sm-6 mx-3" style="width: 15rem;">
-                <img src="img/team/team-1.jpg" class="card-img mt-3" alt="...">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="/img/or10.jpg" class="card-img-top" alt="..." style="height: 150px ">
                 <div class="card-body">
-                  <h5 class="card-title">AMAN</h5>
-                  <p class="card-text">Aliansi Masyarakat Adat Nusantara (AMAN) bekerja untuk mempertahankan hak-hak masyarakat adat serta mempromosikan
-                    pengetahuan tradisional dan hukum adat.</p>
-                  <div class="d-grid gap-2 col-6 mx-auto">
-                  <a href="#" class="btn btn-primary align-items-end">Explore</a> 
-                 </div>  
+                  <h5 class="card-title">Komunitas Dongeng Indonesia</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
+                <div class="card-footer d-flex justify-content-center">
+                    <button class="btn btn-warning">Explore</button>
+                </div>
+              </div>
             </div>
-            
-            <div class="card col-sm-6 mx-3" style="width: 15rem;">
-                <img src="img/team/team-1.jpg" class="card-img mt-3" alt="...">
+            <div class="col">
+              <div class="card h-100">
+                <img src="/img/or5.jpg" class="card-img-top" alt="..." style="height: 150px ">
                 <div class="card-body">
-                    <h5 class="card-title">JPIC</h5>
-                    <p class="card-text">Justice, Peace and Integrity of Creation bertujuan untuk mencapai keadilan dan perdamaian di dunia, mengakhiri kekerasan
-                        dan perang, kemiskinan, penindasan dan perusakan planet.</p>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                    <a href="#" class="btn btn-primary align-items-end">Explore</a> 
-                    </div>   
+                  <h5 class="card-title">Indonesia Go Green!</h5>
+                  <p class="card-text">This is a short card.</p>
                 </div>
-            </div> 
-                
-            <div class="card col-sm-6 mx-3" style="width: 15rem;">
-                <img src="img/team/team-1.jpg" class="card-img mt-3" alt="...">
+                <div class="card-footer d-flex justify-content-center">
+                    <button class="btn btn-warning">Explore</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="/img/or9.jpg" class="card-img-top" alt="..." style="height: 150px ">
                 <div class="card-body">
-                    <h5 class="card-title">Ayo Dongeng Indonesia</h5>
-                    <p class="card-text">Ayo Dongeng Indonesia, merupakan sebuah komunitas yang terfokus pada trauma healing anak-anak
-                        dalam kegiatan pascabencana.</p>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                    <a href="#" class="btn btn-primary">Explore</a>  
-                    </div>  
+                  <h5 class="card-title">Sahabat Sejati</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                 </div>
-            </div> 
+                <div class="card-footer d-flex justify-content-center">
+                    <button class="btn btn-warning">Explore</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="/img/or8.jpg" class="card-img-top" alt="..." style="height: 150px ">
+                <div class="card-body">
+                  <h5 class="card-title">Smile For You</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. akowakwokawoooooooooooooooooooookaakowkokoawkoawawkowakkoawko</p>
+                </div>
+                <div class="card-footer d-flex justify-content-center">
+                    <button class="btn btn-warning">Explore</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <div class="card col-sm-6 mx-3" style="width: 15rem;">
-                <img src="img/team/team-1.jpg" class="card-img mt-3" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Indonesia Berkebun</h5>
-                    <p class="card-text">Indonesia Berkebun merupakan salah satu komunitas relawan
-                        di Indonesia yang terfokus pada rasa kepedulian atas lingkungan,
-                        terutama di wilayah perkotaan dengan program urban farming.</p>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                    <a href="#" class="btn btn-primary">Explore</a>  
-                </div>  
-                </div>
-            </div> 
-        </>
     </div>
 </section><!-- End Team Section -->

@@ -1,6 +1,6 @@
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center justify-content-center">
+  <section id="hero" class="d-flex align-items-center justify-content-center" style="background-image: url('https://www.lindenhoff.nl/content/uploads/product_images/1386/original/60816-768x583.jpg')">
     <div class="container" data-aos="fade-up">
 
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">

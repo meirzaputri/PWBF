@@ -42,14 +42,14 @@
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-newsletter">
+          {{-- <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Get Started!</h4>
             <p>Join us to make an immediate impact and make everyone smile</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Register">
             </form>
 
-          </div>
+          </div> --}}
 
         </div>
       </div>
