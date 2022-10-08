@@ -27,7 +27,7 @@
               <div class="card" style="border-radius: 1rem;">
                 <div class="row g-0">
                   <div class="col-md-6 col-lg-5 d-none d-md-block">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                    <img src="https://images.unsplash.com/photo-1578357078586-491adf1aa5ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
                       alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
                   </div>
                   <div class="col-md-6 col-lg-7 d-flex align-items-center">
@@ -37,7 +37,7 @@
       
                         <div class="d-flex align-items-center mb-3 pb-1">
                           <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
-                          <span class="h1 fw-bold mb-0">Logo</span>
+                          <span class="h1 fw-bold mb-0">Login</span>
                         </div>
       
                         <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
@@ -53,7 +53,7 @@
                         </div>
       
                         <div class="pt-1 mb-4">
-                          <button class="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                          <button class="btn btn-dark btn-lg btn-block" type="button"><a href="/volunteers">Login</a></button>
                         </div>
       
                         <a class="small text-muted" href="#!">Forgot password?</a>

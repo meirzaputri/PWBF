@@ -10,7 +10,7 @@
       <nav id="navbar" class="navbar order-last order-lg-0 sticky-top">
         <ul>
           <li><a class="nav-link scrollto active" href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="/about">About</a></li>
           <li><a class="nav-link scrollto" href="#events">Events</a></li>
           <li><a class="nav-link scrollto " href="#Organizations">Organization</a></li>
           <li><a class="nav-link scrollto" href="#documentation">Documentation</a></li>
@@ -20,7 +20,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="/login" class="get-started-btn scrollto">Login</a>
+      <a href="/login" class="get-started-btn scrollto">Logout</a>
 
     </div>
   </header><!-- End Header -->

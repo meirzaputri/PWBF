@@ -16,20 +16,20 @@
 <link rel="stylesheet" href="css/style.css">
     <title>Volunteer-an</title>
 </head>
-<body class="bg-warning">
+<body class="dark">
     @include('partials.navbar')
 
 
     <div class="container-fluid vh-100" style="margin-top: 85px">
         <div class="row">
             <div class="col">
-                <h1 class="text-center">Detail Event</h1>
+                <h1 class="text-center" style="font-family: Poppins, sans-serif">Detail Event</h1>
             </div>
         </div>
         <div class="row">
             <div class="col card m-2">
                 <div class="card-body">
-                    <img src="https://www.lindenhoff.nl/content/uploads/product_images/1386/original/60816-768x583.jpg" alt="" class="card-img">
+                    <img src="img/ev3.jpeg" alt="" class="card-img">
                     <div class="card-img-overlay">
 
                     </div>
@@ -38,8 +38,23 @@
 
             <div class="col card m-2">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title"><b>Peduli Pendidikan Anak Indonesia</b></h5>
+                    <p class="card-text">Peduli Pendidikan Anak Indonesia merupakan kegiatan yang bertujuan untuk membantu anak-anak Indonesia untuk mendapatkan pendidikan yang layak. Kegiatan ini meliputi serangkaian kegiatan seperti belajar membaca, menulis, menggambar, dan bermain bersama sama.</p>
+
+                    <h5 class="card-title"><b>Timeline Kegiatan</b></h5>
+                    <p class="card-text">Date : 7 September 2022 </p>
+                    <p class="card-text">Location : Surabaya</p>
+
+                    <h5 class="card-title"><b>Timeline Open Recruitment</b></h5>
+                    <p class="card-text">Open Recruitment : 1 - 3 September 2022 </p>
+                    <p class="card-text">Pengumuman Seleksi Administrasi : 3 September 2022</p>
+                    <p class="card-text">Interview : 4 September 2022</p>
+                    <p class="card-text">Pengumuman Interview : 5 September 2022</p>
+
+                    <div class=d-grid gap-2 col-4 mx-auto>
+                        <button class="btn btn-outline-dark" type="button"><a href="/formregisevent">Join Us</button>
+                      </div>
+ 
                 </div>
             </div>
         </div>

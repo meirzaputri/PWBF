@@ -1,5 +1,5 @@
 <!-- ======= Cta Section ======= -->
-<section id="cta" class="cta" style="background-image: url('https://www.lindenhoff.nl/content/uploads/product_images/1386/original/60816-768x583.jpg')">
+<section id="cta" class="cta" style="background-image: url('img/bg2.jpg')">
     <div class="container" data-aos="zoom-in">
 
       <div class="text-center">
