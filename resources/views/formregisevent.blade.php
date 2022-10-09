@@ -105,9 +105,15 @@
                           </div> 
                         </div>
 
-                        <div class=d-grid gap-2 col-4 mx-auto>
-                            <button class="btn btn-outline-dark" type="button"><a href="#">Submit</button>
-                          </div>
+                        {{-- <div class="d-grid gap-2 col-6 mx-auto"> --}}
+                          {{-- <button type="button" class="btn btn-outline-dark"><a href="#">Submit</button>
+                        </div> --}}
+                        <div class="my-3">
+                          <div class="loading">Loading</div>
+                          <div class="error-message"></div>
+                          <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
 
                           <br>
                           <br>

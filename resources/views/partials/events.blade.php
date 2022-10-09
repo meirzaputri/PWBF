@@ -12,7 +12,7 @@
           <div class="icon-box">
 
             {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-            <h4><a href="event1">Peduli Pendidikan Anak Indonesia</a></h4>
+            <h4><a href="detailevent1">Peduli Pendidikan Anak Indonesia</a></h4>
             <div class="card-footer">
               <p>Date : 07 September 2021</p> 
               <p>Place : Surabaya</p>
@@ -24,7 +24,7 @@
           <div class="icon-box">
 
             {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-            <h4><a href="">Go Green!</a></h4>
+            <h4><a href="#">Go Green!</a></h4>
             <div class="card-footer">
               <p>Date : 10 Oktober 2021</p> 
               <p>Place : Surabaya</p>
@@ -36,7 +36,7 @@
           <div class="icon-box">
 
             {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-            <h4><a href="">Cat Save Place</a></h4>
+            <h4><a href="#">Cat Save Place</a></h4>
             <div class="card-footer">
               <p>Date : 15 Oktober 2021</p> 
               <p>Place : Surabaya</p>
@@ -48,7 +48,7 @@
           <div class="icon-box">
 
             {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-            <h4><a href="">Trauma Healing</a></h4>
+            <h4><a href="#">Trauma Healing</a></h4>
             <div class="card-footer">
               <p>Date : 25 Oktober 2021</p> 
               <p>Place : Surabaya</p>
@@ -60,7 +60,7 @@
           <div class="icon-box">
 
             {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-            <h4><a href="">Voluntrees!</a></h4>
+            <h4><a href="#">Voluntrees!</a></h4>
             <div class="card-footer">
               <p>Date : 25 Maret 2022</p> 
               <p>Place : Surabaya</p>
@@ -72,7 +72,7 @@
           <div class="icon-box">
 
             {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-            <h4><a href="">Climate Change Rangers</a></h4>
+            <h4><a href="#">Climate Change Rangers</a></h4>
             <div class="card-footer">
               <p>Date : 27 Maret 2022</p> 
               <p>Place : Surabaya</p>

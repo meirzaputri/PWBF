@@ -45,12 +45,12 @@ Route::get('/register', function () {
     return view('register');
 });;
 
-Route::get('/about', function () {
-    return view('partials.about');
-});;
+// Route::get('/about', function () {
+//     return view('partials.about');
+// });;
 
-Route::get('/event1', function () {
-    return view('event1');
+Route::get('/detailevent1', function () {
+    return view('detevent1');
 });;
 
 Route::get('/admin', function () {
@@ -63,4 +63,16 @@ Route::get('/formvolunteers', function () {
 
 Route::get('/formregisevent', function () {
     return view('formregisevent');
+});;
+
+// Route::get('/moreevents', function () {
+//     return view('moreevents');
+// });;
+
+Route::get('/moreorganization', function () {
+    return view('moreorganization');
+});;
+
+Route::get('/detailorg1', function () {
+    return view('detailorg1');
 });;

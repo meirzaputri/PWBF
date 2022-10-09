@@ -21,11 +21,17 @@
    @include('partials.hero')
    <main id="main">
        @include('partials.events')
-       @include('partials.organizations')
-       @include('partials.documentation')                          
-       
-    
+       <div class="d-grid gap-2 col-3 mx-auto">
+        <button type="button" class="btn btn-outline-dark"><a href="moreevents">More Events</button>
+      </div>
 
+       @include('partials.organizations')
+       <div class="d-grid gap-2 col-3 mx-auto">
+        <button type="button" class="btn btn-outline-dark"><a href="moreorganization">More Organization</button>
+      </div>
+       
+      <br>
+      <br>
 </main>
     @include('partials.footer')
 
