@@ -8,12 +8,12 @@
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center">
-                            <h2 class="ml-lg-2">Divisi Fauna</h2>
+                            <h2 class="ml-lg-2">Divisi Pendidikan</h2>
                         </div>
                         <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">
                             <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
                                 <i class="material-icons">&#xE147;</i>
-                                <span>Add New Employees</span>
+                                <span>Add New Organizations</span>
                             </a>
                             <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal">
                                 <i class="material-icons">&#xE15C;</i>
@@ -29,11 +29,11 @@
                             <th><span class="custom-checkbox">
                                     <input type="checkbox" id="selectAll">
                                     <label for="selectAll"></label></th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Address</th>
-                            <th>Phone</th>
-                            <th>Actions</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Address</th>
+                                    <th>Phone</th>
+                                    <th>Activity</th>
                         </tr>
                     </thead>
 
@@ -43,8 +43,8 @@
                                     <input type="checkbox" id="checkbox1" name="option[]"
                                         value="1">
                                     <label for="checkbox1"></label></th>
-                            <th>Thomas Hardy</th>
-                            <th>ThomasHardy@gmail.com</th>
+                            <th>Organization A</th>
+                            <th>OrganizationA@gmail.com</th>
                             <th>90r parkdground poland Usa.</th>
                             <th>(78-582552-9)</th>
                             <th>
@@ -65,8 +65,8 @@
                                     <input type="checkbox" id="checkbox2" name="option[]"
                                         value="1">
                                     <label for="checkbox2"></label></th>
-                            <th>Dominique Perrier</th>
-                            <th>dominiquePerrier@gmail.com</th>
+                            <th>Organization B</th>
+                            <th>OrganizationB@gmail.com</th>
                             <th>90r ser57, Berlin poland Bermany.</th>
                             <th>(78-5235-2-9)</th>
                             <th>
@@ -87,8 +87,8 @@
                                     <input type="checkbox" id="checkbox3" name="option[]"
                                         value="1">
                                     <label for="checkbox3"></label></th>
-                            <th>Marai Andres</th>
-                            <th>MarariAndres@gmail.com</th>
+                            <th>Organization C</th>
+                            <th>OrganizationC@gmail.com</th>
                             <th>90r ser57, Berlin poland Bermany.</th>
                             <th>(78-239-669)</th>
                             <th>
@@ -108,8 +108,8 @@
                                     <input type="checkbox" id="checkbox4" name="option[]"
                                         value="1">
                                     <label for="checkbox4"></label></th>
-                            <th>Vishweb Design</th>
-                            <th>vishwebdesign@gmail.com</th>
+                            <th>Organization D</th>
+                            <th>OrganizationD@gmail.com</th>
                             <th> B-2 ser57 Nodia East Delhi,India.</th>
                             <th>(78-239-669)</th>
                             <th>
@@ -129,8 +129,8 @@
                                     <input type="checkbox" id="checkbox5" name="option[]"
                                         value="1">
                                     <label for="checkbox5"></label></th>
-                            <th>Vishwajeet Kumar</th>
-                            <th>vishkumar234@gmail.com</th>
+                            <th>Organization E</th>
+                            <th>OrganizationE@gmail.com</th>
                             <th> B-2 ser57 Nodia East Delhi,India.</th>
                             <th>(78-555-229)</th>
                             <th>

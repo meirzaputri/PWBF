@@ -8,12 +8,12 @@
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center">
-                            <h2 class="ml-lg-2">Divisi Pengembangan Masyarakat</h2>
+                            <h2 class="ml-lg-2">Manage Events</h2>
                         </div>
                         <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">
                             <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
                                 <i class="material-icons">&#xE147;</i>
-                                <span>Add New Organizations</span>
+                                <span>Add New Event</span>
                             </a>
                             <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal">
                                 <i class="material-icons">&#xE15C;</i>
@@ -29,11 +29,11 @@
                             <th><span class="custom-checkbox">
                                     <input type="checkbox" id="selectAll">
                                     <label for="selectAll"></label></th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Address</th>
-                                    <th>Phone</th>
-                                    <th>Activity</th>
+                            <th>Name</th>
+                            <th>Division</th>
+                            <th>Location</th>
+                            <th>Deskripsi</th>                         
+                            <th>Activity</th>
                         </tr>
                     </thead>
 
@@ -43,10 +43,13 @@
                                     <input type="checkbox" id="checkbox1" name="option[]"
                                         value="1">
                                     <label for="checkbox1"></label></th>
-                            <th>Organization A</th>
-                            <th>OrganizationA@gmail.com</th>
-                            <th>90r parkdground poland Usa.</th>
-                            <th>(78-582552-9)</th>
+                            <th>Sobat Diabet</th>
+                            <th>Kesehatan</th>
+                            <th>Jakarta</th>
+                            <th>Membentuk generasi muda yang peduli
+                                terhadap diabetes dan isu - isu
+                                kesehatan.
+                            </th>
                             <th>
                                 <a href="#editEmployeeModal" class="edit" data-toggle="modal">
                                     <i class="material-icons" data-toggle="tooltip"
@@ -65,10 +68,12 @@
                                     <input type="checkbox" id="checkbox2" name="option[]"
                                         value="1">
                                     <label for="checkbox2"></label></th>
-                            <th>Organization B</th>
-                            <th>OrganizationB@gmail.com</th>
-                            <th>90r ser57, Berlin poland Bermany.</th>
-                            <th>(78-5235-2-9)</th>
+                            <th>Gerakan Kampung Membaca</th>
+                            <th>Pendidikan</th>
+                            <th>Biak, Papua</th>
+                            <th>Membangun pohok baca di kampung-
+                                kampung terpencil.
+                            </th>
                             <th>
                                 <a href="#editEmployeeModal" class="edit" data-toggle="modal">
                                     <i class="material-icons" data-toggle="tooltip"
@@ -87,10 +92,13 @@
                                     <input type="checkbox" id="checkbox3" name="option[]"
                                         value="1">
                                     <label for="checkbox3"></label></th>
-                            <th>Organization C</th>
-                            <th>OrganizationC@gmail.com</th>
-                            <th>90r ser57, Berlin poland Bermany.</th>
-                            <th>(78-239-669)</th>
+                            <th>Harmoni Seni</th>
+                            <th>Seni dan Budaya</th>
+                            <th>Maluku</th>
+                            <th>Memperkenalkan kepada generasi
+                                penerus bahwa seni merupakan
+                                warisan nenek moyang.
+                            </th>
                             <th>
                                 <a href="#edit" class="edit" data-toggle="modal">
                                     <i class="material-icons" data-toggle="tooltip"
@@ -108,10 +116,12 @@
                                     <input type="checkbox" id="checkbox4" name="option[]"
                                         value="1">
                                     <label for="checkbox4"></label></th>
-                            <th>Organization D</th>
-                            <th>OrganizationD@gmail.com</th>
-                            <th> B-2 ser57 Nodia East Delhi,India.</th>
-                            <th>(78-239-669)</th>
+                            <th>eRecycle Fansa</th>
+                            <th>Lingkungan</th>
+                            <th>Surabaya</th>
+                            <th>Membentuk generasi muda yang
+                                peduli akan kelestarian alam.
+                            </th>
                             <th>
                                 <a href="#editEmployeeModal" class="edit" data-toggle="modal">
                                     <i class="material-icons" data-toggle="tooltip"
@@ -129,10 +139,13 @@
                                     <input type="checkbox" id="checkbox5" name="option[]"
                                         value="1">
                                     <label for="checkbox5"></label></th>
-                            <th>Organization E</th>
-                            <th>OrganizationE@gmail.com</th>
-                            <th> B-2 ser57 Nodia East Delhi,India.</th>
-                            <th>(78-555-229)</th>
+                            <th>Gandeng ODGJ</th>
+                            <th>Pengembangan Masyarakat</th>
+                            <th>Banten</th>
+                            <th>Kunjungan panti rehabilitasi mental
+                                bertujuan memberikan perhatian kepada
+                                ODGJ terlantar.
+                            </th>
                             <th>
                                 <a href="#editEmployeeModal" class="edit" data-toggle="modal">
                                     <i class="material-icons" data-toggle="tooltip"
