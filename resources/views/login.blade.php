@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="https://akcdn.detik.net.id/community/media/visual/2021/12/15/arti-emoji-love-1_43.jpeg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   {{-- <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> --}}
@@ -59,7 +59,9 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="#" class="get-started-btn scrollto">Login</a>
+      @if (!isset($login))
+      <a href="/login" class="get-started-btn scrollto">Login</a>
+      @endif
 
     </div>
   </header><!-- End Header -->
@@ -78,27 +80,33 @@
                   <div class="col-md-6 col-lg-7 d-flex align-items-center">
                     <div class="card-body p-4 p-lg-5 text-black">
       
-                      <form>
-      
+                      <form method="post" action="/login">
+                        @csrf
                         <div class="d-flex align-items-center mb-3 pb-1">
                           <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
                           <span class="h1 fw-bold mb-0">Login</span>
                         </div>
       
                         <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
-      
+                        @if(session()->has('Salah'))
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                          {{session('Salah')}}
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        @endif
+
                         <div class="form-outline mb-4">
-                          <input type="email" id="form2Example17" class="form-control form-control-lg" />
+                          <input type="email" id="form2Example17" name="email" value = "{{ session('Email') }}" class="form-control form-control-lg" />
                           <label class="form-label" for="form2Example17">Email address</label>
                         </div>
       
                         <div class="form-outline mb-4">
-                          <input type="password" id="form2Example27" class="form-control form-control-lg" />
+                          <input type="password" id="form2Example27" name="password" class="form-control form-control-lg" />
                           <label class="form-label" for="form2Example27">Password</label>
                         </div>
       
                         <div class="pt-1 mb-4">
-                          <button class="btn btn-dark btn-lg btn-block" type="button"><a href="/volunteers">Login</a></button>
+                          <button class="btn btn-dark btn-lg btn-block" type="submit">Login</button>
                         </div>
       
                         <a class="small text-muted" href="#!">Forgot password?</a>
@@ -107,6 +115,7 @@
                         <a href="#!" class="small text-muted">Terms of use.</a>
                         <a href="#!" class="small text-muted">Privacy policy</a>
                       </form>
+
       
                     </div>
                   </div>

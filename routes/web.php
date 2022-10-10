@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\controllerhome;
+use App\Http\Controllers\loginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +20,7 @@ Route::get('/', function () {
 });;
 
 Route::get('/volunteers', function () {
-    return view('dasboardvolunteer');
+    return view('dashboardvolunteer');
 });;
 
 // Route::get('/about', function () {
@@ -37,20 +38,22 @@ Route::get('/volunteers', function () {
 // Route::get('/contact', function () {
 //     return view('contact');
 // });;
-Route::get('/login', function () {
-    return view('login');
-});;
+Route::get('/login', [loginController::class,"login"]);
+Route::post('/login', [loginController::class,"loginpost"]); 
+
 
 Route::get('/register', function () {
     return view('register');
-});
+});;
 
 // Route::get('/about', function () {
 //     return view('partials.about');
 // });;
 
 Route::get('/detailevent1', function () {
-    return view('detevent1');
+    return view('detevent1', [
+        'login' => true
+    ]);
 });;
 
 Route::get('/admin', function () {
@@ -65,9 +68,9 @@ Route::get('/formregisevent', function () {
     return view('formregisevent');
 });;
 
-// Route::get('/moreevents', function () {
-//     return view('moreevents');
-// });;
+Route::get('/moreevents', function () {
+    return view('moreevents');
+});;
 
 Route::get('/moreorganization', function () {
     return view('moreorganization');
@@ -77,42 +80,36 @@ Route::get('/detailorg1', function () {
     return view('detailorg1');
 });;
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
+Route::get('/about', function () {
+    return view('about1');
 });;
-Route::get('/detailevent', function () {
-    return view('detailevent');
+Route::get('/documentation', function () {
+    return view('documentation1');
 });;
-
-Route::get('/admin', function () {
-    return view('dashboardadmin');
-});;
-Route::get('/fauna', function () {
-    return view('faunaadmin');   
-});;
-Route::get('/lingkungan', function () {
-    return view('lingkunganadmin');   
-});;
-Route::get('/senbud', function () {
-    return view('senbud');   
-});;
-Route::get('/kesehatan', function () {
-    return view('kesehatanadmin');   
-});;
-Route::get('/pendidikan', function () {
-    return view('pendidikan');   
-});;
-Route::get('/bencana', function () {
-    return view('bencana');   
-});;
-Route::get('/pengmas', function () {
-    return view('pengembanganmasyarakat');   
-});;
-Route::get('/volunteer', function () {
-    return view('volunsidebar');   
-});;
-Route::get('/events', function () {
-    return view('eventssidebar');   
+Route::get('/contactus', function () {
+    return view('contactus1');
 });;
 
+Route::get('/dashboardorganisasi', function () {
+    return view('dashboardorganisasi');
+});;
 
+Route::get('/dashboardvolunteer', function () {
+    return view('dashboardvolunteer');
+});;
+
+Route::get('/volunteersorg', function () {
+    return view('volunteersorg');
+});;
+
+Route::get('/pedulipendidikan', function () {
+    return view('pedulipendidikan');
+});;
+
+Route::get('/mendongengtasya', function () {
+    return view('mendongengtasya');
+});;
+
+Route::get('/haridongeng', function () {
+    return view('haridongeng');
+});;

@@ -33,7 +33,7 @@
         <div class="body-overlay"></div>
 
         <!-------sidebar--design------------>
-@include('partials.sidebaradmin')
+@include('partials.sidebarorg')
 
 
 
@@ -41,7 +41,7 @@
 
         <div id="content">
 
-           @include('partials.topbaradmin')
+           @include('partials.topbarorg')
 
             <!------main-content-start----------->
 
