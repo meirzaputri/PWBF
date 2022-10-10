@@ -44,7 +44,7 @@
             <div class="icon-box w-100">
   
               {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-              <h4><a href="#">Go Green!</a></h4>
+              <h4><a href="detailevent2">Go Green!</a></h4>
               <div class="card-footer">
                 <p>Date : 10 Oktober 2021</p> 
                 <p>Place : Surabaya</p>

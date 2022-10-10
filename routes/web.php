@@ -39,7 +39,7 @@ Route::get('/volunteers', function () {
 //     return view('contact');
 // });;
 Route::get('/login', [loginController::class,"login"]);
-Route::post('/login', [loginController::class,"loginpost"]); 
+Route::post('/login', [loginController::class,"loginpost"]);
 
 
 Route::get('/register', function () {
@@ -52,6 +52,11 @@ Route::get('/register', function () {
 
 Route::get('/detailevent1', function () {
     return view('detevent1', [
+        'login' => true
+    ]);
+});;
+Route::get('/detailevent2', function () {
+    return view('detevent2', [
         'login' => true
     ]);
 });;
