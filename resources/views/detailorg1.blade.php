@@ -66,10 +66,10 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
   
-                <img src="img/dor1kkkk.jpg" class="img-fluid" alt="">
+                <img src="img/dor1kk.jpg" class="img-fluid" alt="">
   
                 <div class="portfolio-info">
-                  <h4>Lovely Cat</h4>
+                  <h4>Warm</h4>
                   <div class="portfolio-links">
                     <a href="img/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
   
@@ -82,10 +82,10 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
               <div class="portfolio-wrap">
   
-                <img src="img/vol1.jpeg" class="img-fluid" alt="">
+                <img src="img/dor2.jpg" class="img-fluid" alt="">
   
                 <div class="portfolio-info">
-                  <h4>Sharing is Caring</h4>
+                  <h4>Happy U</h4>
                   <div class="portfolio-links">
                     <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -97,10 +97,10 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
   
-                <img src="img/vol2.jpg" class="img-fluid" alt="">
+                <img src="img/dor3.jpg" class="img-fluid" alt="">
   
                 <div class="portfolio-info">
-                  <h4>Let's make the environment cleaner</h4>
+                  <h4>Read The Book</h4>
                   <div class="portfolio-links">
                     <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -108,48 +108,6 @@
                 </div>
               </div>
             </div>
-  
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img src="img/tanam.jpeg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Lets Plant The Trees</h4>
-                  <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-  
-                <img src="img/vol5.jpg" class="img-fluid" alt="">
-  
-                <div class="portfolio-info">
-                  <h4>For U</h4>
-                  <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img src="img/vol6.jpg" class="img-fluid" alt="">
-  
-                <div class="portfolio-info">
-                  <h4>Just For You, guys!</h4>
-                  <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>   
        
        
       

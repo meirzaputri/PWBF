@@ -1,156 +1,206 @@
-<!DOCTYPE html>
+<!-- ======= Services Section ======= -->
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>UpConstruction Bootstrap Template - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  {{-- <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> --}}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-<!-- ======= Recent Blog Posts Section ======= -->
-<section id="recent-blog-posts" class="recent-blog-posts">
-    <div class="container" data-aos="fade-up">
-
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<title>Events</title>
+  </head>
+  <body>
+    @include('partials.navbar1')    
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
   
+        <div class="section-title">
+          <h2>Events</h2>
+          <p>Check our Events</p>
+        </div>
   
-<div class=" section-header">
-      <h2>Recent Blog Posts</h2>
-      <p>In commodi voluptatem excepturi quaerat nihil error autem voluptate ut et officia consequuntu</p>
-    </div>
-
-    <div class="row gy-5">
-
-      <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="post-item position-relative h-100">
-
-          <div class="post-img position-relative overflow-hidden">
-            <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
-            <span class="post-date">December 12</span>
-          </div>
-
-          <div class="post-content d-flex flex-column">
-
-            <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
-
-            <div class="meta d-flex align-items-center">
-              <div class="d-flex align-items-center">
-                <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
-              </div>
-              <span class="px-3 text-black-50">/</span>
-              <div class="d-flex align-items-center">
-                <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
+          <div class="row d-flex justify-content-center">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev3.jpeg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box w-100">
+  
+              {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+              <h4><a href="detailevent1">Peduli Pendidikan Anak Indonesia</a></h4>
+              <div class="card-footer">
+                <p>Date : 07 September 2021</p> 
+                <p>Place : Surabaya</p>
               </div>
             </div>
-
-            <hr>
-
-            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
           </div>
-
-        </div>
-      </div><!-- End post item -->
-
-      <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="post-item position-relative h-100">
-
-          <div class="post-img position-relative overflow-hidden">
-            <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
-            <span class="post-date">July 17</span>
-          </div>
-
-          <div class="post-content d-flex flex-column">
-
-            <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
-
-            <div class="meta d-flex align-items-center">
-              <div class="d-flex align-items-center">
-                <i class="bi bi-person"></i> <span class="ps-2">Mario Douglas</span>
-              </div>
-              <span class="px-3 text-black-50">/</span>
-              <div class="d-flex align-items-center">
-                <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
+  
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev5.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box w-100">
+  
+              {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+              <h4><a href="#">Go Green!</a></h4>
+              <div class="card-footer">
+                <p>Date : 10 Oktober 2021</p> 
+                <p>Place : Surabaya</p>
               </div>
             </div>
-
-            <hr>
-
-            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
           </div>
-
-        </div>
-      </div><!-- End post item -->
-
-      <div class="col-xl-4 col-md-6">
-        <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
-
-          <div class="post-img position-relative overflow-hidden">
-            <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
-            <span class="post-date">September 05</span>
-          </div>
-
-          <div class="post-content d-flex flex-column">
-
-            <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
-
-            <div class="meta d-flex align-items-center">
-              <div class="d-flex align-items-center">
-                <i class="bi bi-person"></i> <span class="ps-2">Lisa Hunter</span>
-              </div>
-              <span class="px-3 text-black-50">/</span>
-              <div class="d-flex align-items-center">
-                <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
+  
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/catvol1.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box w-100">
+  
+              {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+              <h4><a href="#">Cat Save Place</a></h4>
+              <div class="card-footer">
+                <p>Date : 15 Oktober 2021</p> 
+                <p>Place : Surabaya</p>
               </div>
             </div>
-
-            <hr>
-
-            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
           </div>
+  
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev2.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box w-100">
+  
+              {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+              <h4><a href="#">Trauma Healing</a></h4>
+              <div class="card-footer">
+                <p>Date : 25 Oktober 2021</p> 
+                <p>Place : Surabaya</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/vol3.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box w-100">
+  
+              {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+              <h4><a href="#">Voluntrees!</a></h4>
+              <div class="card-footer">
+                <p>Date : 25 Maret 2022</p> 
+                <p>Place : Surabaya</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/climatechange.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box w-100">
+  
+              {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+              <h4><a href="#">Climate Change Rangers</a></h4>
+              <div class="card-footer">
+                <p>Date : 27 Maret 2022</p> 
+                <p>Place : Surabaya</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/climatechange.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box w-100">
+{{-- 1 --}}
+  
+<div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev3.jpeg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+  <div class="icon-box w-100">
 
+    {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+    <h4><a href="detailevent1">Peduli Pendidikan Anak Indonesia</a></h4>
+    <div class="card-footer">
+      <p>Date : 07 September 2021</p> 
+      <p>Place : Surabaya</p>
+    </div>
+  </div>
+</div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev1.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+  
+            {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+            <h4><a href="#"></a></h4>
+            <div class="card-footer">
+              <p>Date : 13 April 2022</p> 
+              <p>Place : Malang</p>
+            </div>
+          </div>
         </div>
-      </div><!-- End post item -->
+  
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev2.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+  
+            {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+            <h4><a href="#">Collect & Donate Pet Food</a></h4>
+            <div class="card-footer">
+              <p>Date : 13 April 2022</p> 
+              <p>Place : Surabaya</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev3.jpeg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+  
+            {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+            <h4><a href="#">Donate Blood</a></h4>
+            <div class="card-footer">
+              <p>Date : 14-19 April 2022</p> 
+              <p>Place : Surabaya</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev4.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+  
+            {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+            <h4><a href="#">Eco-Friendly Challenge</a></h4>
+            <div class="card-footer">
+              <p>Date : 25 Maret 2022</p> 
+              <p>Place : Surabaya</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev5.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+  
+            {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+            <h4><a href="#">Tutor a Child</a></h4>
+            <div class="card-footer">
+              <p>Date : 13-14 Oktober 2022</p> 
+              <p>Place : Surabaya</p>
+            </div>
+          </div>
+        </div>
 
+{{-- 2 --}}
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev4.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+  
+            {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+            <h4><a href="#">Food For You</a></h4>
+            <div class="card-footer">
+              <p>Date : 14-16 Oktober 2022</p> 
+              <p>Place : Surabaya</p>
+            </div>
+          </div>
+        </div>
+   </div>
     </div>
+  </div>
+</section><!-- End Services Section -->
+ <!-- Optional JavaScript; choose one of the two! -->
 
-    </div>
-  </section>
-  <!-- End Recent Blog Posts Section -->
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>

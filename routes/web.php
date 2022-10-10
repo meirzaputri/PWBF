@@ -19,7 +19,7 @@ Route::get('/', function () {
 });;
 
 Route::get('/volunteers', function () {
-    return view('dasboardvolunteer');
+    return view('dashboardvolunteer');
 });;
 
 // Route::get('/about', function () {
@@ -38,7 +38,9 @@ Route::get('/volunteers', function () {
 //     return view('contact');
 // });;
 Route::get('/login', function () {
-    return view('login');
+    return view('login', [
+        'login' => true
+    ]);
 });;
 
 Route::get('/register', function () {
@@ -50,7 +52,9 @@ Route::get('/register', function () {
 // });;
 
 Route::get('/detailevent1', function () {
-    return view('detevent1');
+    return view('detevent1', [
+        'login' => true
+    ]);
 });;
 
 Route::get('/admin', function () {
@@ -65,9 +69,9 @@ Route::get('/formregisevent', function () {
     return view('formregisevent');
 });;
 
-// Route::get('/moreevents', function () {
-//     return view('moreevents');
-// });;
+Route::get('/moreevents', function () {
+    return view('moreevents');
+});;
 
 Route::get('/moreorganization', function () {
     return view('moreorganization');
@@ -75,4 +79,22 @@ Route::get('/moreorganization', function () {
 
 Route::get('/detailorg1', function () {
     return view('detailorg1');
+});;
+
+Route::get('/about', function () {
+    return view('about1');
+});;
+Route::get('/documentation', function () {
+    return view('documentation1');
+});;
+Route::get('/contactus', function () {
+    return view('contactus1');
+});;
+
+Route::get('/dashboardorganisasi', function () {
+    return view('dashboardorganisasi');
+});;
+
+Route::get('/dashboardvolunteer', function () {
+    return view('dashboardvolunteer');
 });;
