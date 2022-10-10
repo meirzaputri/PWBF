@@ -60,6 +60,11 @@ Route::get('/detailevent2', function () {
         'login' => true
     ]);
 });;
+Route::get('/detailevent3', function () {
+    return view('detevent3', [
+        'login' => true
+    ]);
+});;
 
 Route::get('/admin', function () {
     return view('admin');

@@ -64,9 +64,9 @@
               <div class="icon-box w-100">
     
               {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-              <h4><a href="detailevent1">Peduli Pendidikan Anak Indonesia</a></h4>
+              <h4><a href="#">Voluntrees</a></h4>
               <div class="card-footer">
-                <p>Date : 07 September 2021</p> 
+                <p>Date : 25 Maret 2022</p> 
                 <p>Place : Surabaya</p>
               </div>
             </div>
@@ -76,15 +76,15 @@
               <div class="icon-box w-100">
     
               {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-              <h4><a href="#">Mendongeng Bersama Kak Tasya</a></h4>
+              <h4><a href="#">Go Green!</a></h4>
               <div class="card-footer">
-                <p>Date : 11 Oktober 2021</p> 
+                <p>Date : 10 Oktober 2021</p> 
                 <p>Place : Surabaya</p>
               </div>
             </div>
           </div>
     
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/haridongeng.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+            {{-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/haridongeng.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box w-100">
     
               {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
@@ -156,7 +156,7 @@
                 </div>
               </div>
             </div>
-       
+        --}}
        
       
 </main>

@@ -36,7 +36,7 @@
           <div class="icon-box w-100">
 
           {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-          <h4><a href="#">Cat Save Place</a></h4>
+          <h4><a href="detailevent3">Cat Save Place</a></h4>
           <div class="card-footer">
             <p>Date : 15 Oktober 2021</p> 
             <p>Place : Surabaya</p>
