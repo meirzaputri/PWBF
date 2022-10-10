@@ -98,11 +98,7 @@
                         </div>
       
                         <div class="pt-1 mb-4">
-<<<<<<< HEAD
                           <button class="btn btn-dark btn-lg btn-block" type="button"><a href="/volunteers">Login</a></button>
-=======
-                          <button onclick="href='/admin';" class="btn btn-dark btn-lg btn-block">Login</button>
->>>>>>> 99c8294 (menambahkan view admin)
                         </div>
       
                         <a class="small text-muted" href="#!">Forgot password?</a>
