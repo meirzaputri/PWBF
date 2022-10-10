@@ -13,30 +13,31 @@
                         <i class="material-icons">diversity_3</i>Organizations
                     </a>
                     <ul class="collapse list-unstyled menu" id="homeSubmenu1">
-                        <li><a href="#">Fauna</a></li>
-                        <li><a href="#">Kesehatan</a></li>
-                        <li><a href="#">Lingkungan</a></li>
-                        <li><a href="#">Pendidikan</a></li>
-                        <li><a href="#">Pengembangan Masyarakat</a></li>
-                        <li><a href="#">Penanggulangan Bencana</a></li>
-                        <li><a href="#">Seni dan Budaya</a></li>
+                        <li><a href="/fauna">Fauna</a></li>
+                        <li><a href="/kesehatan">Kesehatan</a></li>
+                        <li><a href="/lingkungan">Lingkungan</a></li>
+                        <li><a href="/pendidikan">Pendidikan</a></li>
+                        <li><a href="/pengmas">Pengembangan Masyarakat</a></li>
+                        <li><a href="/bencana">Penanggulangan Bencana</a></li>
+                        <li><a href="/senbud">Seni dan Budaya</a></li>
                     </ul>
                 </li>
 
 
                 <li class="">
-                    <a href="#" class="">
+                    <a href="/volunteer" class="">
                         <i class="material-icons">supervisor_account</i>Volunteers
+                        
                     </a>
                 </li>
 
                 <li class="">
-                    <a href="#" class="">
+                    <a href="/events" class="">
                         <i class="material-icons">diversity_2</i>Events
                     </a>
                 </li>
 
-                <li class="dropdown">
+                {{-- <li class="dropdown">
                     <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="material-icons">equalizer</i>charts
                     </a>
@@ -45,13 +46,14 @@
                         <li><a href="#">Pages 2</a></li>
                         <li><a href="#">Pages 3</a></li>
                     </ul>
-                </li>
+                </li> --}}
 
                 <li class="">
                     <a href="#" class="">
-                        <i class="material-icons">settings</i>Website Settings
+                        <i class="material-icons">logout</i>Log Out
                     </a>
                 </li>
+
         </div>
 
         <!-------sidebar--design- close----------->
