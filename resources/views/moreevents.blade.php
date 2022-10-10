@@ -99,95 +99,76 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/climatechange.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/cat.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box w-100">
 {{-- 1 --}}
   
-<div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev3.jpeg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
-  <div class="icon-box w-100">
-
-    {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-    <h4><a href="detailevent1">Peduli Pendidikan Anak Indonesia</a></h4>
-    <div class="card-footer">
-      <p>Date : 07 September 2021</p> 
-      <p>Place : Surabaya</p>
-    </div>
-  </div>
-</div>
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev1.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
-          <div class="icon-box">
   
             {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-            <h4><a href="#"></a></h4>
+            <h4><a href="#">Collect & Donate Pet Food</a></h4>
             <div class="card-footer">
               <p>Date : 13 April 2022</p> 
               <p>Place : Malang</p>
             </div>
           </div>
         </div>
-  
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev2.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
-          <div class="icon-box">
-  
-            {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-            <h4><a href="#">Collect & Donate Pet Food</a></h4>
-            <div class="card-footer">
-              <p>Date : 13 April 2022</p> 
-              <p>Place : Surabaya</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev3.jpeg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
-          <div class="icon-box">
-  
-            {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-            <h4><a href="#">Donate Blood</a></h4>
-            <div class="card-footer">
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/blooddonationn.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box w-100">
+             {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+             <h4><a href="#">Donate Blood</a></h4>
+             <div class="card-footer">
               <p>Date : 14-19 April 2022</p> 
               <p>Place : Surabaya</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev4.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
-          <div class="icon-box">
-  
-            {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-            <h4><a href="#">Eco-Friendly Challenge</a></h4>
-            <div class="card-footer">
+             </div>
+           </div>
+         </div>
+
+         <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/events1.png); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box w-100">
+             {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+             <h4><a href="#">Eco-Friendly Challenge</a></h4>
+             <div class="card-footer">
               <p>Date : 25 Maret 2022</p> 
               <p>Place : Surabaya</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev5.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
-          <div class="icon-box">
-  
-            {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-            <h4><a href="#">Tutor a Child</a></h4>
-            <div class="card-footer">
+             </div>
+           </div>
+         </div>
+
+         <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/vol1.jpeg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box w-100">
+             {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+             <h4><a href="#">Tutor a Child</a></h4>
+             <div class="card-footer">
               <p>Date : 13-14 Oktober 2022</p> 
               <p>Place : Surabaya</p>
-            </div>
-          </div>
-        </div>
-
-{{-- 2 --}}
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev4.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
-          <div class="icon-box">
+             </div>
+           </div>
+         </div>
   
-            {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-            <h4><a href="#">Food For You</a></h4>
-            <div class="card-footer">
-              <p>Date : 14-16 Oktober 2022</p> 
+{{-- 2 --}}
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/or3.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box w-100">
+              {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+              <h4><a href="#">Food For You</a></h4>
+              <div class="card-footer">
+                <p>Date : 14-16 Oktober 2022</p> 
               <p>Place : Surabaya</p>
+              </div>
             </div>
           </div>
-        </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/or9.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box w-100">
+              {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+              <h4><a href="#">School Supply Donation</a></h4>
+              <div class="card-footer">
+                <p>Date : 16 Oktober 2022</p> 
+              <p>Place : Surabaya</p>
+              </div>
+            </div>
+          </div>
+
    </div>
     </div>
   </div>
@@ -203,4 +184,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
   </body>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
 </html>
