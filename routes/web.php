@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\controllerhome;
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\registerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,9 +43,9 @@ Route::get('/login', [loginController::class,"login"]);
 Route::post('/login', [loginController::class,"loginpost"]);
 
 
-Route::get('/register', function () {
-    return view('register');
-});;
+Route::get('/register',[registerController::class,'index']);
+route::post('/formvolunteers',[registerController::class,'register']);
+route::post('/formvolunteers2',[registerController::class,'register2']);
 
 // Route::get('/about', function () {
 //     return view('partials.about');

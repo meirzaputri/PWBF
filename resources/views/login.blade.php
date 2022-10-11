@@ -94,6 +94,12 @@
                           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                         @endif
+                        @if(session()->has('Success'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                          {{session('Success')}}
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        @endif
 
                         <div class="form-outline mb-4">
                           <input type="email" id="form2Example17" name="email" value = "{{ session('Email') }}" class="form-control form-control-lg" />
@@ -109,7 +115,7 @@
                           <button class="btn btn-dark btn-lg btn-block" type="submit">Login</button>
                         </div>
       
-                        <a class="small text-muted" href="#!">Forgot password?</a>
+                        <a class="small text-muted" href="#!">Forgoteb password?</a>
                         <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="/register"
                             style="color: #393f81;">Register here</a></p>
                         <a href="#!" class="small text-muted">Terms of use.</a>
