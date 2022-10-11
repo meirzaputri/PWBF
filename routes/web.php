@@ -67,7 +67,7 @@ Route::get('/detailevent3', function () {
 });;
 
 Route::get('/admin', function () {
-    return view('admin');
+    return view('dashboardadmin');
 });;
 
 Route::get('/formvolunteers', function () {
@@ -122,4 +122,31 @@ Route::get('/mendongengtasya', function () {
 
 Route::get('/haridongeng', function () {
     return view('haridongeng');
+});;
+Route::get('/fauna', function () {
+    return view('faunaadmin');
+});;
+Route::get('/kesehatan', function () {
+    return view('kesehatanadmin');
+});;
+Route::get('/pengmas', function () {
+    return view('pengembanganmasyarakat');
+});;
+Route::get('/senbud', function () {
+    return view('senbud');
+});;
+Route::get('/pendidikan', function () {
+    return view('pendidikan');
+});;
+Route::get('/lingkungan', function () {
+    return view('lingkunganadmin');
+});;
+Route::get('/bencana', function () {
+    return view('bencana');
+});;
+Route::get('/volunteer', function () {
+    return view('volunsidebar');
+});;
+Route::get('/events', function () {
+    return view('eventssidebar');
 });;

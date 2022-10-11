@@ -7,11 +7,11 @@
                     <div class="card-body">
                         <div class="row align-items-center no-gutters">
                             <div class="col me-2">
-                                <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span>Organizatiions</span>
+                                <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span>Organizations</span>
                                 </div>
                                 <div class="text-dark fw-bold h5 mb-0"><span>jumlah</span></div>
                             </div>
-                            <div class="col-auto"><i class="material-icons">diversity_3</i></div>
+                            <div class="col-auto"><i class="material-icons"style="font-size:40px">diversity_3</i></div>
                         </div>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
                                 <div class="text-uppercase text-success fw-bold text-xs mb-1"><span>Events</span></div>
                                 <div class="text-dark fw-bold h5 mb-0">jumlah</div>
                             </div>
-                            <div class="col-auto"><i class="material-icons">diversity_2</i></div>
+                            <div class="col-auto"><i class="material-icons"style="font-size:40px">diversity_2</i></div>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                                 <div class="text-uppercase text-success fw-bold text-xs mb-1"><span>Volunteers</span></div>
                                 <div class="text-dark fw-bold h5 mb-0">jumlah</div>
                             </div>
-                            <div class="col-auto"><i class="material-icons">supervisor_account</i></div>
+                            <div class="col-auto"><i class="material-icons"style="font-size:40px">supervisor_account</i></div>
                         </div>
                     </div>
                 </div>
