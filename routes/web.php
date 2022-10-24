@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\controllerhome;
+use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\OrganisasiController;
 use App\Http\Controllers\registerController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,13 +41,13 @@ Route::get('/volunteers', function () {
 // Route::get('/contact', function () {
 //     return view('contact');
 // });;
-Route::get('/login', [loginController::class,"login"]);
-Route::post('/login', [loginController::class,"loginpost"]);
+Route::get('/login', [loginController::class, "login"]);
+Route::post('/login', [loginController::class, "loginpost"]);
 
 
-Route::get('/register',[registerController::class,'index']);
-route::post('/formvolunteers',[registerController::class,'register']);
-route::post('/formvolunteers2',[registerController::class,'register2']);
+Route::get('/register', [registerController::class, 'index']);
+route::post('/formvolunteers', [registerController::class, 'register']);
+route::post('/formvolunteers2', [registerController::class, 'register2']);
 
 // Route::get('/about', function () {
 //     return view('partials.about');
@@ -87,9 +89,11 @@ Route::get('/moreorganization', function () {
     return view('moreorganization');
 });;
 
-Route::get('/detailorg1', function () {
-    return view('detailorg1');
-});;
+// Route::get('/detailorg1', function () {
+//     return view('detailorg1');
+// });;
+
+Route::get('/detevent1', [KegiatanController::class, 'index']);
 
 Route::get('/about', function () {
     return view('about1');

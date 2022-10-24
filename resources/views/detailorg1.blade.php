@@ -17,6 +17,7 @@
     <title>Komunitas Dongeng Indonesia</title>
   </head>
   <body>
+    {{-- @dd($organisasi[0]->kegiatan[0]) --}}
     @include('partials.navbar1')
     <section id="hero" class="d-flex align-items-center justify-content-center" style="background-image: url('img/or10.jpg')">
         <div class="container" data-aos="fade-up">
@@ -88,11 +89,14 @@
               <div class="icon-box w-100">
     
               {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-              <h4><a href="#">Hari Dongeng</a></h4>
-              <div class="card-footer">
-                <p>Date : 28 November 2021</p> 
-                <p>Place : Surabaya</p>
-              </div>
+              <h4><a href="#">Kegiatan Organisasi</a></h4>
+              @foreach ($organisasi as $org)
+                <div class="card-footer">
+                  <p>{{ $kegiatan->nama_event }}</p> 
+                  <p>{{ $kegiatan->deskripsi_event }}</p>
+                  <p>{{ $kegiatan->lokasi_event }}</p>
+                </div>
+              @endforeach
             </div>
           </div>
         </div>
