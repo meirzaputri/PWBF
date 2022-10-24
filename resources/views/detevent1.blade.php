@@ -37,25 +37,20 @@
             </div>
 
             <div class="col card m-2">
+                @foreach ($kegiatans as $kegiatan)
                 <div class="card-body">
-                    <h5 class="card-title"><b>Peduli Pendidikan Anak Indonesia</b></h5>
-                    <p class="card-text">Peduli Pendidikan Anak Indonesia merupakan kegiatan yang bertujuan untuk membantu anak-anak Indonesia untuk mendapatkan pendidikan yang layak. Kegiatan ini meliputi serangkaian kegiatan seperti belajar membaca, menulis, menggambar, dan bermain bersama sama.</p>
-
-                    <h5 class="card-title"><b>Timeline Kegiatan</b></h5>
-                    <p class="card-text">Date : 7 September 2022 </p>
-                    <p class="card-text">Location : Surabaya</p>
-
-                    <h5 class="card-title"><b>Timeline Open Recruitment</b></h5>
-                    <p class="card-text">Open Recruitment : 1 - 3 September 2022 </p>
-                    <p class="card-text">Pengumuman Seleksi Administrasi : 3 September 2022</p>
-                    <p class="card-text">Interview : 4 September 2022</p>
-                    <p class="card-text">Pengumuman Interview : 5 September 2022</p>
+                    <h5 class="card-title"><b>{{ $kegiatan->nama_event }}</b></h5>
+                    <p class="card-text">{{ $kegiatan->organisasi->nama_organisasi }} </p>
+                    <p class="card-text">{{ $kegiatan->deskripsi_event }}</p>
+                    <p class="card-text">{{ $kegiatan->tglmulai_event }}</p>
+                    <p class="card-text">{{ $kegiatan->lokasi_event }}</p>
 
                     <div class=d-grid gap-2 col-4 mx-auto>
                         <button class="btn btn-outline-dark" type="button"><a href="/formregisevent">Join Us</button>
                       </div>
  
                 </div>
+                @endforeach
             </div>
         </div>
     </div>
