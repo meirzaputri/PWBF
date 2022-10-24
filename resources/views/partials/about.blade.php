@@ -7,6 +7,7 @@
           <p class="fst-italic">
             <b>Volunteer-an</b> merupakan web yang berfungsi sebagai sarana untuk menyebarkan kegiatan sosial dan beraksi sebagai relawan.
           </p>
+          <br>
           <ul>
             <h3><b>Our Mission</b></h3>
             <p> Meningatkan jiwa sosial masing-masing individu</p>

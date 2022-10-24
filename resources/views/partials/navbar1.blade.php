@@ -20,7 +20,15 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="/login" class="get-started-btn scrollto">Logout</a>
+      <li class="nav-item dropdown nav-link">
+        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          {{Auth::user()->name}}
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="/login">Logout</a></li>
+        </ul>
+      </li>
 
     </div>
   </header><!-- End Header -->

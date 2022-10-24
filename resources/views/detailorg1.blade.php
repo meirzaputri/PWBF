@@ -84,7 +84,7 @@
             </div>
           </div>
     
-            {{-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/haridongeng.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/haridongeng.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box w-100">
     
               {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}

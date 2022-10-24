@@ -1,7 +1,7 @@
 
         <div id="sidebar">
             <div class="sidebar-header">
-                <h3><img src="{{ asset('import/img/logo.png') }}" class="img-fluid" /><span>Volunteer-an</span></h3>
+                <h3><img src="{{ asset('import/img/admin.jpg') }}" class="img-fluid" /><span>Volunteer-an</span></h3>
             </div>
             <ul class="list-unstyled component m-0">
                 <li class="active">

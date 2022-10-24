@@ -65,6 +65,7 @@
                             <th>Date</th>
                             <th>Location</th>
                             <th>Volunteers</th>
+                            <th>Status</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -79,6 +80,7 @@
                             <th>07 September 2021</th>
                             <th>Surabaya</th>
                             <th>100</th>
+                            <th>Sedang Berjalan</th>
                             <th>
                                 <a href="#editEvents" class="edit" data-toggle="modal">
                                     <i class="material-icons" data-toggle="tooltip"
@@ -101,6 +103,7 @@
                             <th>11 Oktober 2021</th>
                             <th>Surabaya</th>
                             <th>100</th>
+                            <th>Sedang Berjalan</th>
                             <th>
                                 <a href="#editEvents" class="edit" data-toggle="modal">
                                     <i class="material-icons" data-toggle="tooltip"
@@ -123,6 +126,7 @@
                             <th>28 November 2021</th>
                             <th>Surabaya</th>
                             <th>100</th>
+                            <th>Sedang Berjalan</th>
                             <th>
                                 <a href="#edit" class="edit" data-toggle="modal">
                                     <i class="material-icons" data-toggle="tooltip"
