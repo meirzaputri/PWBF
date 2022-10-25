@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Organisasi;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Divisi extends Model
 {
@@ -11,8 +12,9 @@ class Divisi extends Model
 
     protected $guarded = ['id'];
 
-    public function Organisasi()
+    public function organisasis()
     {
         return $this->hasMany(Organisasi::class);
     }
+    
 }

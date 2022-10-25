@@ -5,12 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class AdminOrganisasi extends Model
+class RelawanOrganisasi extends Model
 {
     use HasFactory;
-
-    protected $table = "admin_organisasi";
-    protected $guarded = ["id"];
     
-    }
-
+    protected $table = "relawan_organisasi";
+    protected $guarded = ['id'];
+    
+}
