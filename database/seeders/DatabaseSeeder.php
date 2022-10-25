@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Divisi;
 use App\Models\Kegiatan;
 use App\Models\Organisasi;
 use Illuminate\Database\Seeder;
@@ -67,6 +68,41 @@ class DatabaseSeeder extends Seeder
             'deskripsi_event' => 'Kegiatan tentang menumbuhkan minat membaca',
             'lokasi_event' => 'Surabaya',
             'status_event' => true
+        ]);
+        //id 1
+        Divisi::create([
+            'nama_divisi' => 'Bencana',
+            'slug' => 'bencana'
+        ]);
+        //id 2
+        Divisi::create([
+            'nama_divisi' => 'Fauna',
+            'slug' => 'fauna'
+        ]);
+        //id 3
+        Divisi::create([
+            'nama_divisi' => 'Kesehatan',
+            'slug' => 'kesehatan'
+        ]);
+        //id 4
+        Divisi::create([
+            'nama_divisi' => 'Lingkungan',
+            'slug' => 'lingkungan'
+        ]);
+        //id 5
+        Divisi::create([
+            'nama_divisi' => 'Pendidikan',
+            'slug' => 'pendidikan'
+        ]);
+        //id 6
+        Divisi::create([
+            'nama_divisi' => 'Pengembangan Masyarakat',
+            'slug' => 'pengembangan-masyarakat'
+        ]);
+        //id 7
+        Divisi::create([
+            'nama_divisi' => 'Seni dan Budaya',
+            'slug' => 'seni-dan-budaya'
         ]);
     }
 }
