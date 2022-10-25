@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Divisi;
 use App\Models\Kegiatan;
 use App\Models\Organisasi;
 use Illuminate\Database\Seeder;
@@ -39,34 +40,77 @@ class DatabaseSeeder extends Seeder
         //     $table->timestamps();
         // });
 
-        \App\Models\Organisasi::create([
-            'divisi_id' => 1,
-            'nama_organisasi' => 'Relawan Indo',
+        Kegiatan::create([
+            'organisasi_id' => 1,
+            'nama_event' => 'Hari Dongeng',
+            'tglmulai_event' => '2022-10-11',
+            'tglberakhir_event' => '2022-10-22',
+            'deskripsi_event' => 'Kegiatan mendongeng bersama anak-anak di Surabaya guna memperingati Hari Dongeng',
+            'lokasi_event' => 'Surabaya',
+            'status_event' => true
+        ]);
+
+        Kegiatan::create([
+            'organisasi_id' => 1,
+            'nama_event' => 'Mendongeng Bersama Kak Tasya',
+            'tglmulai_event' => '2022-11-11',
+            'tglberakhir_event' => '2022-01-22',
+            'deskripsi_event' => 'Mendongeng bersama kak Tasya tentang pentingnya pembangunan karakter sejak dini',
+            'lokasi_event' => 'Surabaya',
+            'status_event' => true
+        ]);
+        Organisasi::create([
+            'divisi_id' => 5,
+            'nama_organisasi' => 'Komunitas Dongeng',
             'alamat_organisasi' => 'Surabaya',
-            'email_organisasi' => 'org@gmail.com',
+            'email_organisasi' => 'komunitasdongeng@gmail.com',
             'notelp_organisasi' => '08222121234',
             'username_organisasi' => 'relindo',
             'password_organisasi' => bcrypt('123')
         ]);
 
-        \App\Models\Kegiatan::create([
-            'organisasi_id' => 1,
-            'nama_event' => 'Kongres Kebudayaan',
-            'tglmulai_event' => '2022-10-11',
-            'tglberakhir_event' => '2022-10-22',
-            'deskripsi_event' => 'Kegiatan tentang musyawarah pengambil kebijakan bidang kebudayaan',
-            'lokasi_event' => 'Surabaya',
-            'status_event' => true
+        Organisasi::create([
+            'divisi_id' => 4,
+            'nama_organisasi' => 'Indonesia Go Green!',
+            'alamat_organisasi' => 'Surabaya',
+            'email_organisasi' => 'iggreen@gmail.com',
+            'notelp_organisasi' => '089765490001',
+            'username_organisasi' => 'indogg',
+            'password_organisasi' => bcrypt('indogg123')
+        ]);
+        Divisi::create([
+            'nama_divisi' => 'Bencana',
+            'slug' => 'bencana'
         ]);
 
-        \App\Models\Kegiatan::create([
-            'organisasi_id' => 1,
-            'nama_event' => 'Good Reader',
-            'tglmulai_event' => '2022-11-11',
-            'tglberakhir_event' => '2022-01-22',
-            'deskripsi_event' => 'Kegiatan tentang menumbuhkan minat membaca',
-            'lokasi_event' => 'Surabaya',
-            'status_event' => true
+        Divisi::create([
+            'nama_divisi' => 'Fauna',
+            'slug' => 'fauna'
+        ]);
+
+        Divisi::create([
+            'nama_divisi' => 'Kesehatan',
+            'slug' => 'kesehatan'
+        ]);
+
+        Divisi::create([
+            'nama_divisi' => 'Lingkungan',
+            'slug' => 'lingkungan'
+        ]);
+
+        Divisi::create([
+            'nama_divisi' => 'Pendidikan',
+            'slug' => 'pendidikan'
+        ]);
+
+        Divisi::create([
+            'nama_divisi' => 'Pengembangan Masyarakat',
+            'slug' => 'pengembangan-masyarakat'
+        ]);
+
+        Divisi::create([
+            'nama_divisi' => 'Seni dan Budaya',
+            'slug' => 'seni-dan-budaya'
         ]);
     }
 }

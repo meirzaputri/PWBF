@@ -89,9 +89,7 @@ Route::get('/moreorganization', function () {
     return view('moreorganization');
 });;
 
-// Route::get('/detailorg1', function () {
-//     return view('detailorg1');
-// });;
+Route::get('/detailorg1',[OrganisasiController::class, 'index']);;
 
 Route::get('/detevent1', [KegiatanController::class, 'index']);
 
