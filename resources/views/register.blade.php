@@ -43,23 +43,43 @@
                         <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign up your account</h5>
       
                         <div class="form-outline mb-4">
-                          <input type="email" id="form2Example17" name="email" class="form-control form-control-lg" />
+                          <input type="email" id="form2Example17" name="email" class="form-control form-control-lg  @error('email') is-invalid @enderror" />
                           <label class="form-label" for="form2Example17">Email address</label>
+                          @error('email')
+                          <div class="invalid-feedback">
+                              {{ $message }}
+                          </div>
+                          @enderror
                         </div>
 
                         <div class="form-outline mb-4">
-                          <input type="text" id="form2Example18" name="username" class="form-control form-control-lg" />
+                          <input type="text" id="form2Example18" name="username" class="form-control form-control-lg @error('username') is-invalid @enderror" />
                           <label class="form-label" for="form2Example17">Username</label>
+                          @error('username')
+                          <div class="invalid-feedback">
+                              {{ $message }}
+                          </div>
+                          @enderror
                         </div>
       
                         <div class="form-outline mb-4">
-                          <input type="password" name="password" id="form2Example27" class="form-control form-control-lg" />
+                          <input type="password" name="password" id="form2Example27" class="form-control form-control-lg @error('password') is-invalid @enderror" />
                           <label class="form-label" for="form2Example27">Password</label>
+                          @error('password')
+                          <div class="invalid-feedback">
+                              {{ $message }}
+                          </div>
+                          @enderror
                         </div>
 
                         <div class="form-outline mb-4">
-                          <input type="password" name="password_confirmation" id="form2Example28" class="form-control form-control-lg" />
+                          <input type="password" name="password_confirmation" id="form2Example28" class="form-control form-control-lg @error('password_confirmation') is-invalid @enderror" />
                           <label class="form-label" for="form2Example27">Confirm Password</label>
+                          @error('password_confirmation')
+                          <div class="invalid-feedback">
+                              {{ $message }}
+                          </div>
+                          @enderror
                         </div>
       
                         <div class="pt-1 mb-4">

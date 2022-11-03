@@ -37,13 +37,15 @@
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline">
                                                 <input type="text" name="first" id="form3Example1m" name="first"
-                                                    class="form-control form-control-lg @error('first')is-invalid @enderror" required/>
+                                                    class="form-control form-control-lg @error('first') is-invalid @enderror" required/>
                                                 <label class="form-label" for="form3Example1m">First name</label>
-                                                @error('name')
+                                                @error('first')
                                                 <div class="invalid-feedback">
                                                  {{ $message }}
+                                                </div>
+                                                @enderror
                                             </div>
-                                            @enderror
+
                                         </div>
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline">
@@ -66,7 +68,7 @@
                                     </div>
 
                                     <div class="form-outline mb-4">
-                                        <input type="text" id="form3Example8" name="notelp"
+                                        <input type="number" id="form3Example8" name="notelp"
                                             class="form-control form-control-lg @error('notelp')is-invalid @enderror" required/>
                                         <label class="form-label" for="form3Example8">Phone Number</label>
                                         @error('notelp')

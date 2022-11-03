@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Models\Relawan;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -18,14 +18,14 @@ class registerController extends Controller
         return view('register');
     }
 
-    public function registervolun()
+    public function register2()
     {
+
         $nama = request('first') . ' ' . request('last');
 
         $user = [
             'name' => $nama,
             'alamat' => request('alamat'),
-            'domisili' => request('domisili'),
             'email' => request('email'),
             'notelp' => request('notelp'),
             'username' => request('username'),
@@ -40,15 +40,10 @@ class registerController extends Controller
 
         return redirect('/login')->with('Success', 'Selamat Registrasi Berhasil')->with('Email', request('email'));
     }
-    public function validasivolun(Request $request)
+    public function register(Request $request)
     {
         $validatedData = $request->validate([
-            'name' => 'required|max:225',
-            'alamat' => 'required|max:225',
-            'domisili' => 'required|max:225',
             'email' => 'required|email:dns|max:225|unique:users',
-            'tgllahir_relawan' => 'required',
-            'jk_relawan' => 'required',
             'username' => 'required|min:3|max:225|unique:users',
             'password' => 'required|min:5',
             'password_confirmation' => 'required|min:5|same:password'

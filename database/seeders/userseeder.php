@@ -17,7 +17,7 @@ class userseeder extends Seeder
         User::create([
             "name"=>"Andrew Sucipto",
             "alamat"=>
-             "Surabaya",
+         "Surabaya",
             "email" => "andrew@gmail.com",
             "notelp" => "089778654389",
             "username" => "AndrewScpt",

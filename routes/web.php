@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\controllerhome;
 use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\loginController;
@@ -19,11 +20,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});;
+Route::get('/',[Controller::class,'index']);
 
-Route::get('/volunteers',[relawanController::class,'index']);
+Route::get('/volunteers',[relawanController::class,'index
+']);
 
 // Route::get('/about', function () {
 //     return view('welcome');

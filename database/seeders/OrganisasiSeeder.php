@@ -66,6 +66,7 @@ class OrganisasiSeeder extends Seeder
         ]);
         Organisasi::create([
             'divisi_id' => 2,
+            "path"=> 'img\or3.jpg',
             'nama_organisasi' => 'Kelompok Masyarakat Pengawas (Pokmawas)',
             'alamat_organisasi' => 'Malang',
             'email_organisasi' => 'pokmawas@gmail.com',
@@ -76,6 +77,7 @@ class OrganisasiSeeder extends Seeder
         ]);  
         Organisasi::create([
             'divisi_id' => 3,
+            "path"=> 'img\or3.jpg',
             'nama_organisasi' => 'Komunitas Kesehatan Relawan Indoneia',
             'alamat_organisasi' => 'Jakarta',
             'email_organisasi' => 'kreki@gmail.com',
