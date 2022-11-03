@@ -10,7 +10,7 @@ class KegiatanController extends Controller
 {
     public function index()
     {
-        $kegiatans = Kegiatan::with('organisasi')->get();
+        // $kegiatans = Kegiatan::with('organisasi')-> where(id,)->get();
         return view('detevent1', compact('kegiatans'));
     }
 }

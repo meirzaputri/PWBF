@@ -5,6 +5,7 @@ use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\OrganisasiController;
 use App\Http\Controllers\registerController;
+use App\Http\Controllers\relawanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,9 +23,7 @@ Route::get('/', function () {
     return view('welcome');
 });;
 
-Route::get('/volunteers', function () {
-    return view('dashboardvolunteer');
-});;
+Route::get('/volunteers',[relawanController::class,'index']);
 
 // Route::get('/about', function () {
 //     return view('welcome');

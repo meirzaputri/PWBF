@@ -60,7 +60,7 @@
           <p>Check our Events</p>
         </div>
     
-            <div class="row d-flex justify-content-center">
+          <div class="row d-flex justify-content-center">
             @foreach ($organisasi as $org)
                 
             
@@ -68,7 +68,7 @@
               <div class="icon-box w-100">
     
               {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-              <h4><a href="#">{{ $org->nama_event }}</a></h4>
+              <h4><a href="/detevent1">{{ $org->nama_event }}</a></h4>
               <div class="card-footer">
                 <p>{{ $org->deskripsi_event }}</p> 
                 <p>{{ $org->lokasi_event }}</p>

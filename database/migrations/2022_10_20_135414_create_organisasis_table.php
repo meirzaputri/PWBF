@@ -17,6 +17,7 @@ class CreateOrganisasisTable extends Migration
             $table->id();
             $table->foreignId('divisi_id');
             $table->string('nama_organisasi');
+            $table->string('path');
             $table->string('alamat_organisasi');
             $table->string('email_organisasi')->unique();
             $table->string('notelp_organisasi', 15);
