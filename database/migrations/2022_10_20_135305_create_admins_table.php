@@ -21,6 +21,7 @@ class CreateAdminsTable extends Migration
             $table->string('notelp_admin', 15);
             $table->string('username_admin', 100)->unique();
             $table->string('password_admin', 100);
+            $table->integer('level');
             $table->timestamps();
         });
     }

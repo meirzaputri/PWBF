@@ -23,6 +23,7 @@ class CreateOrganisasisTable extends Migration
             $table->string('notelp_organisasi', 15);
             $table->string('username_organisasi',100)->unique();
             $table->string('password_organisasi', 100);
+            $table->integer('level');
             $table->timestamps();
         });
     }
