@@ -22,8 +22,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[Controller::class,'index']);
 
-Route::get('/volunteers',[relawanController::class,'index
-']);
+Route::get('/volunteers',[relawanController::class,'index']);
+Route::get('/moreorganization',[relawanController::class,'moreorganization']);
 
 // Route::get('/about', function () {
 //     return view('welcome');

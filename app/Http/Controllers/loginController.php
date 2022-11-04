@@ -15,8 +15,9 @@ class loginController extends Controller
     public function loginpost(){
      if(Auth::attempt(["email"=>request("email"),"password"=>request("password")])){
         return redirect('/volunteers');
-     } return back()->with("Salah","Silahkan cek kembali email atau password Anda")->with("Email",request("email"));
-    }
+     } return back()->with("Salah","Silahkan cek kembali email atau password Anda")->with("email",request("email"));
+    
+}
 
     
 }
