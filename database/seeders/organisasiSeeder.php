@@ -71,8 +71,8 @@ class OrganisasiSeeder extends Seeder
         ]);
         Organisasi::create([
             'divisi_id' => 2,
-            'path'=> 'img\or6.jpg',
             'nama_organisasi' => 'Kelompok Masyarakat Pengawas (Pokmawas)',
+            'path'=> 'img\or6.jpg',
             'alamat_organisasi' => 'Malang',
             'email_organisasi' => 'pokmawas@gmail.com',
             'notelp_organisasi' => '082324252627',
@@ -116,7 +116,7 @@ class OrganisasiSeeder extends Seeder
 
         Organisasi::create([
             'divisi_id' => 4,
-            'path'=> 'img\or3.jpg',
+            'path'=> 'img\or10.jpg',
             'nama_organisasi' => 'Indonesia Go Green!',
             'alamat_organisasi' => 'Surabaya',
             'email_organisasi' => 'iggreen@gmail.com',
@@ -127,7 +127,7 @@ class OrganisasiSeeder extends Seeder
         ]);
         Organisasi::create([
             'divisi_id' => 8,
-            'path'=> 'img\or10.jpg',
+            'path'=> 'img\or3.jpg',
             'nama_organisasi' => 'Pandu Lisane',
             'alamat_organisasi' => 'Jakarta',
             'email_organisasi' => 'pandulisane@gmail.com',
