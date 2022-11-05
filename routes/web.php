@@ -7,6 +7,10 @@ use App\Http\Controllers\loginController;
 use App\Http\Controllers\OrganisasiController;
 use App\Http\Controllers\registerController;
 use App\Http\Controllers\relawanController;
+use App\Models\Admin;
+use App\Models\Relawan;
+use App\Models\Organisasi;
+use App\Models\Kegiatan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -54,6 +58,14 @@ route::post('/formvolunteers2', [registerController::class, 'register2']);
 
 Route::get('/detailevent1', function () {
     return view('detevent1', [
+        'login' => true
+    ]);
+});;
+Route::post('/Organisasi/{organisasi}', function (Organisasi $organisasi) {
+    return view ('moreorganization',);
+});
+Route::get('/moreorganization', function () {
+    return view ('moreorganization', [
         'login' => true
     ]);
 });;
@@ -152,3 +164,5 @@ Route::get('/volunteer', function () {
 Route::get('/events', function () {
     return view('eventssidebar');
 });;
+
+

@@ -121,6 +121,7 @@
 
                                         <div class="form-outline mb-4">
                                             <input type="password" id="form2Example27" name="password"
+                                             value="{{ session('Password') }}"
                                                 class="form-control form-control-lg @error('password')is-invalid @enderror" required/>
                                             <label class="form-label" for="form2Example27">Password</label>
                                             @error('password')
