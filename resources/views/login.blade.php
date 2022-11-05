@@ -108,11 +108,11 @@
                                         @endif
 
                                         <div class="form-outline mb-4">
-                                            <input type="username" id="form2Example17" name="username"
-                                                value="{{ session('Username') }}"
-                                                class="form-control form-control-lg @error('username')is-invalid @enderror" required/>
-                                            <label class="form-label" for="form2Example17">Username</label>
-                                            @error('username')
+                                            <input type="email" id="form2Example17" name="email"
+                                                value="{{ session('email') }}"
+                                                class="form-control form-control-lg @error('email')is-invalid @enderror" required/>
+                                            <label class="form-label" for="form2Example17">Email</label>
+                                            @error('email')
                                                 <div class="invalid-feedback">
                                                     {{ $message }}
                                                 </div>

@@ -16,6 +16,7 @@ class OrganisasiSeeder extends Seeder
     {
         Organisasi::create([
             'divisi_id' => 1,
+            "path"=> 'img\or1.jpg',
             'nama_organisasi' => 'Solidaritas Relawan Kemanusiaan',
             'alamat_organisasi' => 'Surabaya',
             'email_organisasi' => 'solidaritasrelawan@gmail.com',
@@ -26,6 +27,7 @@ class OrganisasiSeeder extends Seeder
         ]);
         Organisasi::create([
             'divisi_id' => 1,
+            "path"=> 'img\or2.jpg',
             'nama_organisasi' => 'Rumah Millenials',
             'alamat_organisasi' => 'Jakarta',
             'email_organisasi' => 'rumahmillenials@gmail.com',
@@ -36,6 +38,7 @@ class OrganisasiSeeder extends Seeder
         ]);
         Organisasi::create([
             'divisi_id' => 1,
+            "path"=> 'img\or3.jpg',
             'nama_organisasi' => 'Komunitas Bascomm',
             'alamat_organisasi' => 'Bandung',
             'email_organisasi' => 'bascomm@gmail.com',
@@ -46,6 +49,7 @@ class OrganisasiSeeder extends Seeder
         ]);
         Organisasi::create([
             'divisi_id' => 2,
+            "path"=> 'img\or4.jpg',
             'nama_organisasi' => 'Komunitas Relawan Dokter Hewan Indonesia',
             'alamat_organisasi' => 'Bogor',
             'email_organisasi' => 'relawandokterhewanindonesia@gmail.com',
@@ -56,6 +60,7 @@ class OrganisasiSeeder extends Seeder
         ]);
         Organisasi::create([
             'divisi_id' => 2,
+            "path"=> 'img\or5.jpg',
             'nama_organisasi' => '(Perisai) Pecinta Rimba dan Satwa Liar Indonesia',
             'alamat_organisasi' => 'Probolinggo',
             'email_organisasi' => 'perisai@gmail.com',
@@ -66,7 +71,7 @@ class OrganisasiSeeder extends Seeder
         ]);
         Organisasi::create([
             'divisi_id' => 2,
-            "path"=> 'img\or3.jpg',
+            "path"=> 'img\or6.jpg',
             'nama_organisasi' => 'Kelompok Masyarakat Pengawas (Pokmawas)',
             'alamat_organisasi' => 'Malang',
             'email_organisasi' => 'pokmawas@gmail.com',
@@ -77,7 +82,7 @@ class OrganisasiSeeder extends Seeder
         ]);  
         Organisasi::create([
             'divisi_id' => 3,
-            "path"=> 'img\or3.jpg',
+            "path"=> 'img\or7.jpg',
             'nama_organisasi' => 'Komunitas Kesehatan Relawan Indoneia',
             'alamat_organisasi' => 'Jakarta',
             'email_organisasi' => 'kreki@gmail.com',
@@ -88,6 +93,7 @@ class OrganisasiSeeder extends Seeder
         ]);      
         Organisasi::create([
             'divisi_id' => 3,
+            "path"=> 'img\or8.jpg',
             'nama_organisasi' => 'Dompet Dhuafa Volunteer',
             'alamat_organisasi' => 'Jakarta',
             'email_organisasi' => 'DompetDhuafaVolunteer@gmail.com',
@@ -98,6 +104,7 @@ class OrganisasiSeeder extends Seeder
         ]); 
         Organisasi::create([
             'divisi_id' => 5,
+            "path"=> 'img\or9.jpg',
             'nama_organisasi' => 'Komunitas Dongeng',
             'alamat_organisasi' => 'Surabaya',
             'email_organisasi' => 'komunitasdongeng@gmail.com',
@@ -109,6 +116,7 @@ class OrganisasiSeeder extends Seeder
 
         Organisasi::create([
             'divisi_id' => 4,
+            "path"=> 'img\o10.jpg',
             'nama_organisasi' => 'Indonesia Go Green!',
             'alamat_organisasi' => 'Surabaya',
             'email_organisasi' => 'iggreen@gmail.com',
@@ -119,6 +127,7 @@ class OrganisasiSeeder extends Seeder
         ]);
         Organisasi::create([
             'divisi_id' => 8,
+            "path"=> 'img\or3.jpg',
             'nama_organisasi' => 'Pandu Lisane',
             'alamat_organisasi' => 'Jakarta',
             'email_organisasi' => 'pandulisane@gmail.com',
@@ -129,6 +138,7 @@ class OrganisasiSeeder extends Seeder
         ]);
         Organisasi::create([
             'divisi_id' => 6,
+            "path"=> 'img\or5.jpg',
             'nama_organisasi' => 'Bee-Youth!',
             'alamat_organisasi' => 'Bekasi',
             'email_organisasi' => 'beyouth@gmail.com',
