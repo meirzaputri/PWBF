@@ -9,16 +9,16 @@ class relawanController extends Controller
 {
     public function moreorganization()
     {
-        $organisasi = Organisasi::all();
-        return view('moreorganization',[
-            'organisasi'=>$organisasi
+        $detorganisasi = Organisasi::all();
+        return view('moreorganization', [
+            'detorganisasi' => $detorganisasi
         ]);
     }
     public function index()
     {
         $organisasi = Organisasi::limit(4)->get();
-        return view('dashboardvolunteer',[
-            'organisasi'=>$organisasi
+        return view('dashboardvolunteer', [
+            'organisasi' => $organisasi
         ]);
     }
 }

@@ -39,112 +39,29 @@
                     </thead>
 
                     <tbody>
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox1" name="option[]"
-                                        value="1">
-                                    <label for="checkbox1"></label></th>
-                            <th>Meirza Putri</th>
-                            <th>19</th>
-                            <th>Lumajang</th>
-                            <th>meirzaaa@gmail.com</th>                
-                            <th>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
+                      @foreach ($relawans as $relawan)
+                      <tr>
+                        <th><span class="custom-checkbox">
+                                <input type="checkbox" id="checkbox1" name="option[]"
+                                    value="1">
+                                <label for="checkbox1"></label></th>
+                        <th>{{ $relawan->nama_relawan }}</th>
+                        <th>{{ $relawan->tgllahir_relawan }}</th>
+                        <th>{{ $relawan->alamat_relawan }}</th>
+                        <th>{{ $relawan->email_relawan }}</th>                
+                        <th>
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip"
+                                    title="Edit">&#xE254;</i>
+                            </a>
+                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip"
+                                    title="Delete">&#xE872;</i>
+                            </a>
+                        </th>
+                    </tr>
+                      @endforeach
 
-
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox2" name="option[]"
-                                        value="1">
-                                    <label for="checkbox2"></label></th>
-                            <th>Dea Nabila</th>
-                            <th>19</th>
-                            <th>Surabaya</th>
-                            <th>denab@gmail.com</th>
-                            <th>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
-
-
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox3" name="option[]"
-                                        value="1">
-                                    <label for="checkbox3"></label></th>
-                            <th>Gamas Akbar</th>
-                            <th>22</th>
-                            <th>Jember</th>
-                            <th>gamasakbar@gmail.com</th>
-                            <th>
-                                <a href="#edit" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox4" name="option[]"
-                                        value="1">
-                                    <label for="checkbox4"></label></th>
-                            <th>Tiara Andini</th>
-                            <th>20</th>
-                            <th>Malang</th>
-                            <th>andini@gmail.com</th>
-                            <th>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox5" name="option[]"
-                                        value="1">
-                                    <label for="checkbox5"></label></th>
-                            <th>Zayn Malik</th>
-                            <th>22</th>
-                            <th>Jakarta</th>
-                            <th>zaynmalik@gmail.com</th>
-                            <th>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
 
                     </tbody>
 

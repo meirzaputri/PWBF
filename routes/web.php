@@ -1,17 +1,20 @@
 <?php
 
-use App\Http\Controllers\Controller;
-use App\Http\Controllers\controllerhome;
-use App\Http\Controllers\KegiatanController;
-use App\Http\Controllers\loginController;
-use App\Http\Controllers\OrganisasiController;
-use App\Http\Controllers\registerController;
-use App\Http\Controllers\relawanController;
 use App\Models\Admin;
 use App\Models\Relawan;
-use App\Models\Organisasi;
 use App\Models\Kegiatan;
+use App\Models\Organisasi;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\controllerhome;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DashboardKegiatanController;
+use App\Http\Controllers\DashboardRelawanController;
+use App\Http\Controllers\loginController;
+use App\Http\Controllers\relawanController;
+use App\Http\Controllers\KegiatanController;
+use App\Http\Controllers\registerController;
+use App\Http\Controllers\OrganisasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -80,9 +83,7 @@ Route::get('/detailevent3', function () {
     ]);
 });;
 
-Route::get('/admin', function () {
-    return view('dashboardadmin');
-});;
+Route::get('/admin', [AdminController::class, 'index']);
 
 Route::get('/formvolunteers', function () {
     return view('formvolunteers');
@@ -122,9 +123,7 @@ Route::get('/dashboardvolunteer', function () {
     return view('dashboardvolunteer');
 });;
 
-Route::get('/volunteersorg', function () {
-    return view('volunteersorg');
-});;
+Route::get('/volunteersorg', [DashboardRelawanController::class, 'indexorg']);;
 
 Route::get('/pedulipendidikan', function () {
     return view('pedulipendidikan');
@@ -158,11 +157,7 @@ Route::get('/lingkungan', function () {
 Route::get('/bencana', function () {
     return view('bencana');
 });;
-Route::get('/volunteer', function () {
-    return view('volunsidebar');
-});;
-Route::get('/events', function () {
-    return view('eventssidebar');
-});;
+Route::get('/volunteer', [DashboardRelawanController::class, 'index']);;
+Route::get('/events', [DashboardKegiatanController::class, 'index']);;
 
 

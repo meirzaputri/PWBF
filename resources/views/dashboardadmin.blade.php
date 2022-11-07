@@ -51,7 +51,7 @@
                     <div class="table-title">
                         <div class="row">
                             <div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center">
-                                <h2 class="ml-lg-2">Manage Orgaisasi</h2>
+                                <h2 class="ml-lg-2">Manage Organisasi</h2>
                             </div>
                             <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">
                                 <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
@@ -81,15 +81,16 @@
                         </thead>
     
                         <tbody>
+                            @foreach ($organisasis as $organisasi)
                             <tr>
                                 <th><span class="custom-checkbox">
                                         <input type="checkbox" id="checkbox1" name="option[]"
                                             value="1">
                                         <label for="checkbox1"></label></th>
-                                <th>Organization A</th>
-                                <th>OrganizationA@gmail.com</th>
-                                <th>90r parkdground poland Usa.</th>
-                                <th>(78-582552-9)</th>
+                                <th>{{ $organisasi->nama_organisasi }}</th>
+                                <th>{{ $organisasi->email_organisasi }}</th>
+                                <th>{{ $organisasi->alamat_organisasi }}</th>
+                                <th>{{ $organisasi->notelp_organisasi }}</th>
                                 <th>
                                     <a href="#editEmployeeModal" class="edit" data-toggle="modal">
                                         <i class="material-icons" data-toggle="tooltip"
@@ -101,92 +102,7 @@
                                     </a>
                                 </th>
                             </tr>
-    
-    
-                            <tr>
-                                <th><span class="custom-checkbox">
-                                        <input type="checkbox" id="checkbox2" name="option[]"
-                                            value="1">
-                                        <label for="checkbox2"></label></th>
-                                <th>Organization B</th>
-                                <th>OrganizationB@gmail.com</th>
-                                <th>90r ser57, Berlin poland Bermany.</th>
-                                <th>(78-5235-2-9)</th>
-                                <th>
-                                    <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                        <i class="material-icons" data-toggle="tooltip"
-                                            title="Edit">&#xE254;</i>
-                                    </a>
-                                    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                        <i class="material-icons" data-toggle="tooltip"
-                                            title="Delete">&#xE872;</i>
-                                    </a>
-                                </th>
-                            </tr>
-    
-    
-                            <tr>
-                                <th><span class="custom-checkbox">
-                                        <input type="checkbox" id="checkbox3" name="option[]"
-                                            value="1">
-                                        <label for="checkbox3"></label></th>
-                                <th>Organization C</th>
-                                <th>OrganizationC@gmail.com</th>
-                                <th>90r ser57, Berlin poland Bermany.</th>
-                                <th>(78-239-669)</th>
-                                <th>
-                                    <a href="#edit" class="edit" data-toggle="modal">
-                                        <i class="material-icons" data-toggle="tooltip"
-                                            title="Edit">&#xE254;</i>
-                                    </a>
-                                    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                        <i class="material-icons" data-toggle="tooltip"
-                                            title="Delete">&#xE872;</i>
-                                    </a>
-                                </th>
-                            </tr>
-    
-                            <tr>
-                                <th><span class="custom-checkbox">
-                                        <input type="checkbox" id="checkbox4" name="option[]"
-                                            value="1">
-                                        <label for="checkbox4"></label></th>
-                                <th>Organization D</th>
-                                <th>OrganizationD@gmail.com</th>
-                                <th> B-2 ser57 Nodia East Delhi,India.</th>
-                                <th>(78-239-669)</th>
-                                <th>
-                                    <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                        <i class="material-icons" data-toggle="tooltip"
-                                            title="Edit">&#xE254;</i>
-                                    </a>
-                                    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                        <i class="material-icons" data-toggle="tooltip"
-                                            title="Delete">&#xE872;</i>
-                                    </a>
-                                </th>
-                            </tr>
-    
-                            <tr>
-                                <th><span class="custom-checkbox">
-                                        <input type="checkbox" id="checkbox5" name="option[]"
-                                            value="1">
-                                        <label for="checkbox5"></label></th>
-                                <th>Organization E</th>
-                                <th>OrganizationE@gmail.com</th>
-                                <th> B-2 ser57 Nodia East Delhi,India.</th>
-                                <th>(78-555-229)</th>
-                                <th>
-                                    <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                        <i class="material-icons" data-toggle="tooltip"
-                                            title="Edit">&#xE254;</i>
-                                    </a>
-                                    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                        <i class="material-icons" data-toggle="tooltip"
-                                            title="Delete">&#xE872;</i>
-                                    </a>
-                                </th>
-                            </tr>
+                            @endforeach
     
                         </tbody>
     

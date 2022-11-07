@@ -72,175 +72,28 @@
                     </thead>
 
                     <tbody>
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox1" name="option[]"
-                                        value="1">
-                                    <label for="checkbox1"></label></th>
-                            <th>VO001</th>
-                            <th>Nadya Aksara</th>
-                            <th>01 Maret 2021</th>
-                            <th>Peduli Pendidikan Anak Indonesia</th>
-                            <th>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
-
-
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox2" name="option[]"
-                                        value="1">
-                                    <label for="checkbox2"></label></th>
-                                    <th>VO002</th>
-                                    <th>Angga Laksana</th>
-                                    <th>01 Maret 2021</th>
-                                    <th>Peduli Pendidikan Anak Indonesia</th>
-                            <th>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
-
-
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox3" name="option[]"
-                                        value="1">
-                                    <label for="checkbox3"></label></th>
-                                    <th>VO003</th>
-                                    <th>Rehan Daniel</th>
-                                    <th>02 Maret 2021</th>
-                                    <th>Mendongeng Bersama Kak Tasya</th>
-                            <th>
-                                <a href="#edit" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox3" name="option[]"
-                                        value="1">
-                                    <label for="checkbox3"></label></th>
-                                    <th>VO004</th>
-                                    <th>Boby Chandra</th>
-                                    <th>02 Maret 2021</th>
-                                    <th>Mendongeng Bersama Kak Tasya</th>
-                            <th>
-                                <a href="#edit" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox3" name="option[]"
-                                        value="1">
-                                    <label for="checkbox3"></label></th>
-                                    <th>VO005</th>
-                                    <th>Raisa Berliana</th>
-                                    <th>02 Maret 2021</th>
-                                    <th>Mendongeng Bersama Kak Tasya</th>
-                            <th>
-                                <a href="#edit" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox3" name="option[]"
-                                        value="1">
-                                    <label for="checkbox3"></label></th>
-                                    <th>VO006</th>
-                                    <th>Dhila Renatta</th>
-                                    <th>02 Maret 2021</th>
-                                    <th>Hari Dongeng</th>
-                            <th>
-                                <a href="#edit" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox3" name="option[]"
-                                        value="1">
-                                    <label for="checkbox3"></label></th>
-                                    <th>VO007</th>
-                                    <th>Francissca Alexandria</th>
-                                    <th>02 Maret 2021</th>
-                                    <th>Hari Dongeng</th>
-                            <th>
-                                <a href="#edit" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox3" name="option[]"
-                                        value="1">
-                                    <label for="checkbox3"></label></th>
-                                    <th>VO008</th>
-                                    <th>Kevin Smith</th>
-                                    <th>02 Maret 2021</th>
-                                    <th>Hari Dongeng</th>
-                            <th>
-                                <a href="#edit" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
+                      @foreach ($relawans as $relawan)
+                      <tr>
+                        <th><span class="custom-checkbox">
+                                <input type="checkbox" id="checkbox1" name="option[]"
+                                    value="1">
+                                <label for="checkbox1"></label></th>
+                        <th>{{ $relawan->id }}</th>
+                        <th>{{ $relawan->nama_relawan }}</th>
+                        <th>{{ $relawan->created_at }}</th>
+                        <th>{{ $relawan->email_relawan }}</th>
+                        <th>
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip"
+                                    title="Edit">&#xE254;</i>
+                            </a>
+                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                <i class="material-icons" data-toggle="tooltip"
+                                    title="Delete">&#xE872;</i>
+                            </a>
+                        </th>
+                    </tr>
+                      @endforeach
                     </tbody>
 
 

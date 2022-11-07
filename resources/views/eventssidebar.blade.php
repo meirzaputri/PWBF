@@ -38,125 +38,29 @@
                     </thead>
 
                     <tbody>
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox1" name="option[]"
-                                        value="1">
-                                    <label for="checkbox1"></label></th>
-                            <th>Sobat Diabet</th>
-                            <th>Kesehatan</th>
-                            <th>Jakarta</th>
-                            <th>Membentuk generasi muda yang peduli
-                                terhadap diabetes dan isu - isu
-                                kesehatan.
-                            </th>
-                            <th>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
-
-
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox2" name="option[]"
-                                        value="1">
-                                    <label for="checkbox2"></label></th>
-                            <th>Gerakan Kampung Membaca</th>
-                            <th>Pendidikan</th>
-                            <th>Biak, Papua</th>
-                            <th>Membangun pohok baca di kampung-
-                                kampung terpencil.
-                            </th>
-                            <th>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
-
-
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox3" name="option[]"
-                                        value="1">
-                                    <label for="checkbox3"></label></th>
-                            <th>Harmoni Seni</th>
-                            <th>Seni dan Budaya</th>
-                            <th>Maluku</th>
-                            <th>Memperkenalkan kepada generasi
-                                penerus bahwa seni merupakan
-                                warisan nenek moyang.
-                            </th>
-                            <th>
-                                <a href="#edit" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox4" name="option[]"
-                                        value="1">
-                                    <label for="checkbox4"></label></th>
-                            <th>eRecycle Fansa</th>
-                            <th>Lingkungan</th>
-                            <th>Surabaya</th>
-                            <th>Membentuk generasi muda yang
-                                peduli akan kelestarian alam.
-                            </th>
-                            <th>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
-
-                        <tr>
-                            <th><span class="custom-checkbox">
-                                    <input type="checkbox" id="checkbox5" name="option[]"
-                                        value="1">
-                                    <label for="checkbox5"></label></th>
-                            <th>Gandeng ODGJ</th>
-                            <th>Pengembangan Masyarakat</th>
-                            <th>Banten</th>
-                            <th>Kunjungan panti rehabilitasi mental
-                                bertujuan memberikan perhatian kepada
-                                ODGJ terlantar.
-                            </th>
-                            <th>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Edit">&#xE254;</i>
-                                </a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                    <i class="material-icons" data-toggle="tooltip"
-                                        title="Delete">&#xE872;</i>
-                                </a>
-                            </th>
-                        </tr>
+             @foreach ($kegiatans as $kegiatan)
+             <tr>
+                <th><span class="custom-checkbox">
+                        <input type="checkbox" id="checkbox1" name="option[]"
+                            value="1">
+                        <label for="checkbox1"></label></th>
+                <th>{{ $kegiatan->nama_event }}</th>
+                <th>{{ $kegiatan->divisi_id }}</th>
+                <th>{{ $kegiatan->lokasi_event }}</th>
+                <th>{{ $kegiatan->deskripsi_event }}
+                </th>
+                <th>
+                    <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                        <i class="material-icons" data-toggle="tooltip"
+                            title="Edit">&#xE254;</i>
+                    </a>
+                    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                        <i class="material-icons" data-toggle="tooltip"
+                            title="Delete">&#xE872;</i>
+                    </a>
+                </th>
+            </tr>
+             @endforeach
 
                     </tbody>
 

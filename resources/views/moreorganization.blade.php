@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -29,7 +30,7 @@
         </div>
 
         <div class="row row-cols-1 row-cols-md-4 g-4">
-          @foreach( $organisasi as $item)
+          @foreach( $detorganisasi as $item)
             <div class="col">
               <div class="card h-100">
                 <img src="{{ $item->path }}" class="card-img-top" alt="..." style="height: 150px ">
@@ -37,12 +38,13 @@
                   <h5 class="card-title">{{ $item->nama_organisasi }}</h5>
                   <p class="card-text">{{ $item->alamat_organisasi}}</p>
                 </div>
+                @endforeach
                 <div class="card-footer d-flex justify-content-center">
                     <a class="btn btn-warning" href="detailorg1" role="button">Explore</a>
                 </div>
               </div>
             </div>
-         @endforeach
+        
           </div>
 {{-- BARIS 2 --}}
         {{-- <div class="row row-cols-2 row-cols-md-4 g-4">
