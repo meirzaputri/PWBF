@@ -27,8 +27,9 @@ use App\Http\Controllers\OrganisasiController;
 |
 */
 
-Route::get('/',[Controller::class,'index']);
-
+Route::get('/', function() {
+    return view('welcome');
+});
 Route::get('/volunteers',[relawanController::class,'index']);
 Route::get('/moreorganization',[relawanController::class,'moreorganization']);
 

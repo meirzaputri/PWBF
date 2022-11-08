@@ -30,13 +30,17 @@
         </div>
 
         <div class="row row-cols-1 row-cols-md-4 g-4">
+<<<<<<< Updated upstream
           @foreach( $detorganisasi as $item)
+=======
+          @foreach( $organisasis as $organisasi)
+>>>>>>> Stashed changes
             <div class="col">
               <div class="card h-100">
-                <img src="{{ $item->path }}" class="card-img-top" alt="..." style="height: 150px ">
+                <img src="{{ $organisasi->path }}" class="card-img-top" alt="..." style="height: 150px ">
                 <div class="card-body">
-                  <h5 class="card-title">{{ $item->nama_organisasi }}</h5>
-                  <p class="card-text">{{ $item->alamat_organisasi}}</p>
+                  <h5 class="card-title">{{ $organisasi->nama_organisasi }}</h5>
+                  <p class="card-text">{{ $organisasi->alamat_organisasi}}</p>
                 </div>
                 @endforeach
                 <div class="card-footer d-flex justify-content-center">

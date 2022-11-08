@@ -13,15 +13,6 @@ class RelawanSeeder extends Seeder
      */
     public function run()
     {
-        // Organisasi::create([
-        //     'divisi_id' => 5,
-        //     'nama_organisasi' => 'Komunitas Dongeng',
-        //     'alamat_organisasi' => 'Surabaya',
-        //     'email_organisasi' => 'komunitasdongeng@gmail.com',
-        //     'notelp_organisasi' => '08222121234',
-        //     'username_organisasi' => 'relindo',
-        //     'password_organisasi' => bcrypt('123')
-        // ]);
         Relawan::create([
             'nama_relawan'=>'Dea Nabila',
             'tgllahir_relawan'=> '2003-02-27',
