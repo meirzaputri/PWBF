@@ -47,9 +47,9 @@ Route::get('/moreorganization',[relawanController::class,'moreorganization']);
 // Route::get('/contact', function () {
 //     return view('contact');
 // });;
-Route::get('/login', [loginController::class, "login"]);
-Route::post('/login', [loginController::class, "loginpost"]);
-
+Route::get('/login', [loginController::class, "login"])->name('login');
+Route::post('/login', [loginController::class, "authenticate"]);
+Route::post('/login', [loginController::class, "logout"]);
 
 Route::get('/register', [registerController::class, 'index']);
 route::post('/formvolunteers', [registerController::class, 'register']);
@@ -157,7 +157,7 @@ Route::get('/lingkungan', function () {
 Route::get('/bencana', function () {
     return view('bencana');
 });;
-Route::get('/volunteer', [DashboardRelawanController::class, 'index']);;
+Route::get('/volunteer', [DashboardRelawanController::class, 'index'])->middleware('auth');;
 Route::get('/events', [DashboardKegiatanController::class, 'index']);;
 
 
