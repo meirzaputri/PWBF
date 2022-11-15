@@ -27,10 +27,14 @@ class loginController extends Controller
             'email' => 'required|email:dns',
             'password' => 'required'
         ]);
+
+        // dd($credentials);
         if (Auth::attempt($credentials)) {
-            $request->session->regenerate();
-            return redirect()->intended('volunteer');
+            $request->session()->regenerate();
+            
+            return redirect()->intended('/volunteer');
         }
+
         return back()->with('loginError', 'Login is failed!')->withInput();
     }
     public function logout()

@@ -62,10 +62,14 @@
                                             <span class="material-icons">settings</span>
                                             Settings
                                         </a></li>
-                                    <li><a href="#">
-                                            <span class="material-icons">logout</span>
-                                            Logout
-                                        </a></li>
+                                    <li>
+                                        <form action="/logout" method="post">
+                                            @csrf
+                                            <button type="submit" style="font-size: 14px">
+                                                <i class="bi bi-box-arrow-right" style="margin-right: 3px"></i>Logout
+                                            </button>
+                                        </form>
+                                    </li>
 
                                 </ul>
                             </li>

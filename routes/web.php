@@ -13,6 +13,7 @@ use App\Http\Controllers\DashboardRelawanController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\relawanController;
 use App\Http\Controllers\KegiatanController;
+use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\registerController;
 use App\Http\Controllers\OrganisasiController;
 
@@ -27,9 +28,7 @@ use App\Http\Controllers\OrganisasiController;
 |
 */
 
-Route::get('/', function() {
-    return view('welcome');
-});
+Route::get('/', [LandingPageController::class, 'index']);
 Route::get('/volunteers',[relawanController::class,'index']);
 Route::get('/moreorganization',[relawanController::class,'moreorganization']);
 
@@ -50,11 +49,11 @@ Route::get('/moreorganization',[relawanController::class,'moreorganization']);
 // });;
 Route::get('/login', [loginController::class, "login"])->name('login');
 Route::post('/login', [loginController::class, "authenticate"]);
-Route::post('/login', [loginController::class, "logout"]);
+Route::post('/logout', [loginController::class, "logout"]);
 
 Route::get('/register', [registerController::class, 'index']);
-route::post('/formvolunteers', [registerController::class, 'register']);
-route::post('/formvolunteers2', [registerController::class, 'register2']);
+Route::post('/formvolunteers', [registerController::class, 'register']);
+Route::post('/formvolunteers2', [registerController::class, 'register2']);
 
 // Route::get('/about', function () {
 //     return view('partials.about');
@@ -160,5 +159,10 @@ Route::get('/bencana', function () {
 });;
 Route::get('/volunteer', [DashboardRelawanController::class, 'index'])->middleware('auth');;
 Route::get('/events', [DashboardKegiatanController::class, 'index']);;
+
+Route::get('/history', function () {
+    return view('history');
+});;
+
 
 

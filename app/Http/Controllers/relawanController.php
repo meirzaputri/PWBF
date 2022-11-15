@@ -9,15 +9,9 @@ class relawanController extends Controller
 {
     public function moreorganization()
     {
-<<<<<<< Updated upstream
-        $detorganisasi = Organisasi::all();
-        return view('moreorganization', [
-            'detorganisasi' => $detorganisasi
-=======
         $organisasis = Organisasi::all();
         return view('moreorganization',[
             'organisasis'=>$organisasis
->>>>>>> Stashed changes
         ]);
     }
     public function index()
