@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
-class loginController extends Controller
+class LoginController extends Controller
 {
     public function login()
     {
@@ -32,7 +32,13 @@ class loginController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
             
-            return redirect()->intended('/volunteer');
+            if(Auth::user()->level == 'admin'){
+                return redirect()->intended('/admin');
+            }else  if(Auth::user()->level == 'relawan'){
+                return redirect()->intended('/dashboardvolunteer');
+            }else  if(Auth::user()->level == 'organisasi'){
+                return redirect()->intended('/dashboardorganisasi');
+            }
         }
 
         return back()->with('loginError', 'Login is failed!')->withInput();

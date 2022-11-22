@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Relawan;
 
 use App\Models\Organisasi;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class relawanController extends Controller
+class RelawanController extends Controller
 {
     public function moreorganization()
     {

@@ -21,7 +21,11 @@
 
 <body class="bg-dark">
 
-
+    @if (session('loginError'))
+        <div class="alert alert-danger" role="alert">
+            {{ session('loginError') }}
+        </div>
+    @endif
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top bg-dark">
         <div class="container d-flex align-items-center justify-content-lg-between">
@@ -110,7 +114,8 @@
                                         <div class="form-outline mb-4">
                                             <input type="email" id="form2Example17" name="email"
                                                 value="{{ session('email') }}"
-                                                class="form-control form-control-lg @error('email')is-invalid @enderror" required/>
+                                                class="form-control form-control-lg @error('email')is-invalid @enderror"
+                                                required />
                                             <label class="form-label" for="form2Example17">Email</label>
                                             @error('email')
                                                 <div class="invalid-feedback">
@@ -121,8 +126,9 @@
 
                                         <div class="form-outline mb-4">
                                             <input type="password" id="form2Example27" name="password"
-                                             value="{{ session('Password') }}"
-                                                class="form-control form-control-lg @error('password')is-invalid @enderror" required/>
+                                                value="{{ session('Password') }}"
+                                                class="form-control form-control-lg @error('password')is-invalid @enderror"
+                                                required />
                                             <label class="form-label" for="form2Example27">Password</label>
                                             @error('password')
                                                 <div class="invalid-feedback">

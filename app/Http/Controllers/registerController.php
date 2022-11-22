@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Hash;
 
 
 
-class registerController extends Controller
+class RegisterController extends Controller
 {
     public function index()
     {

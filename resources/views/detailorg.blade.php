@@ -17,6 +17,7 @@
     <title>Komunitas Dongeng Indonesia</title>
   </head>
   <body>
+    {{-- @dd($organisasi[0]->kegiatan[0]) --}}
     @include('partials.navbar1')
     <section id="hero" class="d-flex align-items-center justify-content-center" style="background-image: url('img/or10.jpg')">
         <div class="container" data-aos="fade-up">
@@ -24,7 +25,7 @@
           <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
     
             <div class="col-xl-6 col-lg-7">
-              <h1>Indonesia<span> Go </span>green!</h1>
+              <h1>Komunitas<span> Dongeng </span>Indonesia</h1>
               <h2>- Menjadi Relawan Untuk Negeri -</h2>
     
             </div>
@@ -39,7 +40,7 @@
             </div>
             <div class="text-center" data-aos="fade-right" data-aos-delay="100">
               <p class="fst-italic">
-                <b>Indonesia Go Green!</b> Sebuah organisasi yang terdapat di lebih dari 10 daerah di Indonesia dengan fokus utama yaitu melestarikan lingkungan.
+                <b>Komunitas Dongeng Indonesia</b> Komunitas Dongeng Indonesia merupakan komunitas yang bergerak dibidang kemanusiaan dan pendidikan. Komunitas ini dibentuk pada tanggal 15 Maret 2000.
               </p>
             </div>
           </div>
@@ -59,40 +60,22 @@
           <p>Check our Events</p>
         </div>
     
-            <div class="row d-flex justify-content-center">
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev3.jpeg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
+          <div class="row d-flex justify-content-center">
+            @foreach ($organisasi as $org)
+                
+            
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/ev3.jpeg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box w-100">
     
               {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-              <h4><a href="detailevent1">Go Green!</a></h4>
+              <h4><a href="/detevent1">{{ $org->nama_event }}</a></h4>
               <div class="card-footer">
-                <p>Date : 10 Oktober 2021</p> 
-                <p>Place : Surabaya</p>
+                <p>{{ $org->deskripsi_event }}</p> 
+                <p>{{ $org->lokasi_event }}</p>
               </div>
             </div>
           </div>
-    
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/dongeng.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon-box w-100">
-    
-              {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-              <h4><a href="#">Voluntrees!</a></h4>
-              <div class="card-footer">
-                <p>Date : 11 Oktober 2021</p> 
-                <p>Place : Surabaya</p>
-              </div>
-            </div>
-          </div>
-    
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch my-4 mt-md-0 mx-1" style="background-image: url(img/haridongeng.jpg); background-size=5px; width: 32%" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon-box w-100">
-    
-              {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-              <h4><a href="#">Hari Dongeng</a></h4>
-              <div class="card-footer">
-                <p>Date : 28 November 2021</p> 
-                <p>Place : Surabaya</p>
-              </div>
+          @endforeach
             </div>
           </div>
         </div>
@@ -156,7 +139,7 @@
                 </div>
               </div>
             </div>
-       
+
        
       
 </main>

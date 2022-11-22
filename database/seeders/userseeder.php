@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
-class userseeder extends Seeder
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,9 +15,8 @@ class userseeder extends Seeder
     public function run()
     {
         User::create([
-            "name"=>"Andrew Sucipto",
-            "alamat"=>
-         "Surabaya",
+            "name" => "Andrew Sucipto",
+            "alamat" => "Surabaya",
             "email" => "andrew@gmail.com",
             "notelp" => "089778654389",
             "username" => "AndrewScpt",
@@ -27,25 +26,25 @@ class userseeder extends Seeder
             "jk_relawan" => "0",
             "pekerjaan_relawan" => "Mahasiswa",
             "stts_relawan" => "1",
-            "level" => "1",
+            "level" => "relawan",
         ]);
         User::create([
-            "name"=>"Gissela Yunita",
-            "alamat"=> "Surabaya",
+            "name" => "Gissela Yunita",
+            "alamat" => "Surabaya",
             "email" => "gyunita@gmail.com",
             "notelp" => "087654785376",
             "username" => "Gisell",
             "password" => bcrypt("gisel123"),
-            "level" => "2",
+            "level" => "admin",
         ]);
         User::create([
-            "name"=>"Kindness Crew",
-            "alamat"=> "Surabaya",
+            "name" => "Kindness Crew",
+            "alamat" => "Surabaya",
             "email" => "kindnesscrew@gmail.com",
             "notelp" => "085436765235",
             "username" => "KindnessCrew",
             "password" => bcrypt("orgkidnesscrew"),
-            "level" => "3",
+            "level" => "organisasi",
         ]);
     }
 }
