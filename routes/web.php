@@ -15,6 +15,7 @@ use App\Http\Controllers\Relawan\RelawanController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\Organisasi\OrganisasiController;
+// use App\Http\Controllers\Relawan\dashboardvolunteerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,10 +27,10 @@ use App\Http\Controllers\Organisasi\OrganisasiController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// Route::get('/dashboardvolunteer',[dashboardvolunteerController::class, 'index']);
 Route::get('/', [LandingPageController::class, 'index']);
-Route::get('/volunteers',[RelawanController::class,'index']);
-Route::get('/moreorganization',[RelawanController::class,'moreorganization']);
+Route::get('/dashboardvolunteer', [RelawanController::class, 'index']);
+Route::get('/moreorganization', [RelawanController::class, 'moreorganization']);
 
 // Route::get('/about', function () {
 //     return view('welcome');
@@ -46,7 +47,7 @@ Route::get('/moreorganization',[RelawanController::class,'moreorganization']);
 // Route::get('/contact', function () {
 //     return view('contact');
 // });;
-Route::group(['middleware' => ['auth', 'ceklevel:admin' ]], function(){
+Route::group(['middleware' => ['auth', 'ceklevel:admin']], function () {
     Route::get('/admin', [AdminController::class, 'index']);
     Route::get('/volunteer', [DashboardRelawanController::class, 'index']);
     Route::get('/events', [DashboardKegiatanController::class, 'index']);
@@ -69,10 +70,10 @@ Route::get('/detailevent', function () {
     ]);
 });;
 Route::post('/Organisasi/{organisasi}', function (Organisasi $organisasi) {
-    return view ('relawan.moreorganization',);
+    return view('relawan.moreorganization',);
 });
 Route::get('/moreorganization', function () {
-    return view ('relawan.moreorganization', [
+    return view('relawan.moreorganization', [
         'login' => true
     ]);
 });;
@@ -93,7 +94,7 @@ Route::get('/moreorganization', function () {
     return view('relawan.moreorganization');
 });;
 
-Route::get('/detailorg',[OrganisasiController::class, 'index']);;
+Route::get('/detailorg', [OrganisasiController::class, 'index']);;
 
 Route::get('/detevent', [KegiatanController::class, 'index']);
 
@@ -154,6 +155,3 @@ Route::get('/bencana', function () {
 Route::get('/history', function () {
     return view('relawan.history');
 });;
-
-
-

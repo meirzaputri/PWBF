@@ -35,15 +35,15 @@
       </div>
 
         <div class="row row-cols-1 row-cols-md-4 g-4">
-          @foreach ($organisasi as $item)
+          @foreach ($organisasi as $data)
               
           <div class="col">
             <div class="card h-100">
-              <img src="{{ $item->path }}" class="card-img-top" alt="..." style="height: 150px ">
+              <img src="{{ $data->path }}" class="card-img-top" alt="..." style="height: 150px ">
               <div class="card-body">
                 <h5 class="card-title text-dark">
-                  <h5 class="card-title text-dark">{{ $item->nama_organisasi }}</h5>
-                  <p class="card-text text-dark">{{ $item->alamat_organisasi }}</p>
+                  <h5 class="card-title text-dark">{{ $data->nama_organisasi }}</h5>
+                  <p class="card-text text-dark">{{ $data->alamat_organisasi }}</p>
                 </div>
                 <div class="card-footer d-flex justify-content-center">
                   <button class="btn btn-warning">Explore</button>

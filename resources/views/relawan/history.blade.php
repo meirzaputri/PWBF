@@ -26,8 +26,8 @@
     <div class="container">
     <div class="card mb-3" style="">
         <div class="row g-0">
-          <div class="col-md-4">
-            <img src="https://dummyimage.com/600x400/000/fff" class="img-fluid rounded-start" alt="...">
+          <div class="col-md-2 h-50">
+            <img src="img/ev4.jpg" class="img-fluid rounded-start" alt="..." style="">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -41,14 +41,14 @@
 
       <div class="card mb-3" style="">
         <div class="row g-0">
-          <div class="col-md-4">
-            <img src="https://dummyimage.com/600x400/000/fff" class="img-fluid rounded-start" alt="...">
+          <div class="col-md-2">
+            <img src="img/ev1.jpg" class="img-fluid rounded-start" alt="..." style="">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Go Green!</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">Peduli Pendidikan Anak</h5>
+              <p class="card-text"><small class="text-muted">Dilaksanakan Oleh : Rumah Kita</p>
+              <p class="card-text"><small class="" style="color:crimson">Selesai</small></p>
             </div>
           </div>
         </div>

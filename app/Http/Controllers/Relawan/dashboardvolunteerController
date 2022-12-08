@@ -1,0 +1,15 @@
+<?php
+namespace App\Http\Controllers\Relawan;
+
+use App\Models\Organisasi;
+use App\Http\Controllers\Controller;
+
+class dashboardvolunteerController extends Controller
+{
+    public function index(){
+        $organisasi = organisasi::all();
+        return view('relawan.dashboardvolunteer',[
+            'organisasi' => $organisasi
+        ]);
+    }
+}

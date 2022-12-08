@@ -11,14 +11,14 @@ class RelawanController extends Controller
     public function moreorganization()
     {
         $organisasis = Organisasi::all();
-        return view('moreorganization',[
+        return view('relawan.moreorganization',[
             'organisasis'=>$organisasis
         ]);
     }
     public function index()
     {
-        $organisasi = Organisasi::limit(4)->get();
-        return view('dashboardvolunteer', [
+        $organisasi = Organisasi::all();
+        return view('relawan.dashboardvolunteer', [
             'organisasi' => $organisasi
         ]);
     }

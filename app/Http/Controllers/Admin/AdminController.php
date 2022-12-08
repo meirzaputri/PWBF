@@ -11,7 +11,7 @@ class AdminController extends Controller
 {
     public function index(){
         $organisasis = Organisasi::all();
-        return view('dashboardadmin',[
+        return view('admin.dashboardadmin',[
             'organisasis' => $organisasis
         ]);
     }

@@ -11,7 +11,7 @@ class OrganisasiController extends Controller
 {
     public function index(){
         $kegiatans = Kegiatan::all();
-        return view('detevent',[
+        return view('relawan.detevent',[
             'kegiantans' => $kegiatans
         ]);
     }
