@@ -151,7 +151,10 @@ Route::get('/bencana', function () {
     return view('admin.bencana');
 });;
 
-
 Route::get('/history', function () {
     return view('relawan.history');
+});;
+
+Route::get('/chart', function () {
+    return view('chart');
 });;

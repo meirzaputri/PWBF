@@ -19,7 +19,7 @@
   <body>
    @include('partials.navbar1')
    <br>
-   <br>
+   <br> 
    <section id="about" class="about">
     <div class="container" data-aos="fade-up">
       <div class="section-title text-center">

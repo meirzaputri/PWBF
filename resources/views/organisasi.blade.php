@@ -12,6 +12,10 @@
     <!----css3---->
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
+    <!-- base:css -->
+
+  {{-- <link rel="stylesheet" href="../css/stylechart.css"> --}}
+
 
     <!--google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +25,40 @@
 
     <!--google material icon-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+    <style>
+        #pieChart {
+          width: 500px;
+          height: 500px;
+          position: relative;
+        }
+        
+        .pie {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          clip: rect(0px, 500px, 500px, 250px);
+          border-radius: 50%;
+          background-color: #4f6077;
+        }
+        
+        .slice1 {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          clip: rect(0px, 250px, 500px, 0px);
+          border-radius: 50%;
+          background-color: #afbdd4;
+        }
+        
+        .slice2 {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          clip: rect(0px, 500px, 500px, 250px);
+          border-radius: 50%;
+          background-color: #f4cc70;
+        }
+      </style>
 
 </head>
 
@@ -80,7 +118,20 @@
     <script src="{{ asset('import/js/popper.min.js') }}"></script>
     <script src="{{ asset('import/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('import/js/jquery-3.3.1.min.js') }}"></script>
-
+    <!-- base:js -->
+    <script src="../../../vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="../../../js/off-canvas.js"></script>
+    <script src="../../../js/hoverable-collapse.js"></script>
+    <script src="../../../js/template.js"></script>
+    <!-- endinject -->
+    <!-- plugin js for this page -->
+    <script src="../../../vendors/chart.js/Chart.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- Custom js for this page-->
+    <script src="../../../js/chart.js"></script>
+    <!-- End custom js for this page-->
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -94,7 +145,26 @@
             });
 
         });
+
+        let pieChart = document.getElementById('pieChart');
+        let pie = document.querySelector('.pie');
+        let slice1 = document.querySelector('.slice1');
+        let slice2 = document.querySelector('.slice2');
+      
+        let angle1 = 0;
+        let angle2 = 0;
+      
+        setInterval(function() {
+          angle1 += 1;
+          angle2 += 2;
+          pie.style.transform = 'rotate(' + angle1 + 'deg)';
+          slice1.style.transform = 'rotate(' + angle2 + 'deg)';
+          slice2.style.transform = 'rotate(' + angle2 + 'deg)';
+        }, 10);
     </script>
+    <script>
+       
+      </script>
 
 
 
