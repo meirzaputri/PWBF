@@ -60,9 +60,18 @@ Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/formvolunteers', [RegisterController::class, 'register']);
 Route::post('/formvolunteers2', [RegisterController::class, 'register2']);
 
+// Route::get('/orgregister', [RegisterController::class, 'index']);
+// Route::post('/formorganisasi', [RegisterController::class, 'registerorg']);
+// Route::post('/formorganisasi2', [RegisterController::class, 'registerorg2']);
+
 // Route::get('/about', function () {
 //     return view('partials.about');
 // });;
+
+Route::get('/orgregister', function () {
+    return view('organisasiregister');
+});;
+
 
 Route::get('/detailevent', function () {
     return view('detevent', [
@@ -80,6 +89,10 @@ Route::get('/moreorganization', function () {
 
 Route::get('/formvolunteers', function () {
     return view('formvolunteers');
+});;
+
+Route::get('/formorganisasi', function () {
+    return view('formorganisasi');
 });;
 
 Route::get('/formregisevent', function () {
@@ -158,3 +171,9 @@ Route::get('/history', function () {
 Route::get('/chart', function () {
     return view('chart');
 });;
+
+// Route::get('/modalregister', function () {
+//     return view('modalregister');
+// });;
+
+

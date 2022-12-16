@@ -31,7 +31,7 @@
                             @csrf
                             <div class="col-xl-12">
                                 <div class="card-body p-md-5 text-black">
-                                    <h3 class="mb-5 text-uppercase">Registration form</h3>
+                                    <h3 class="mb-5 text-uppercase">Volunteer Registration form</h3>
 
                                     <div class="row">
                                         <div class="col-md-6 mb-4">

@@ -142,8 +142,9 @@
                                         </div>
 
                                         <a class="small text-muted" href="#!">Forgoten password?</a>
-                                        <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a
-                                                href="/register" style="color: #393f81;">Register here</a></p>
+                                        <p class="text-muted mb-2 pb-lg-2">Don't have an account? Register here</p>
+                                        <p class="small mb-2 pb-lg-2" style="color: #393f81;"><a href="/register" style="color: #393f81;">Register as Volunteer</a></p>
+                                        <p class="small mb-5 pb-lg-1" style="color: #393f81;"><a href="/orgregister" style="color: #393f81;">Register as Organization</a></p>
                                         <a href="#!" class="small text-muted">Terms of use.</a>
                                         <a href="#!" class="small text-muted">Privacy policy</a>
                                     </form>
