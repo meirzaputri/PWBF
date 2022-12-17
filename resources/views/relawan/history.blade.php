@@ -32,8 +32,8 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">Peduli Lingkungan</h5>
-              <p class="card-text"><small class="text-muted">Dilaksanakan Oleh : Go Green!</small></p>
-              <p class="card-text"><small class="" style="color: blue">Sedang Berlangsung</small></p>
+              <p class="card-text"><small class="text-muted">Presented by : Go Green!</small></p>
+              <p class="card-text"><small class="" style="color: blue">On Going</small></p>
             </div>
           </div>
         </div>
@@ -47,8 +47,8 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">Peduli Pendidikan Anak</h5>
-              <p class="card-text"><small class="text-muted">Dilaksanakan Oleh : Rumah Kita</p>
-              <p class="card-text"><small class="" style="color:crimson">Selesai</small></p>
+              <p class="card-text"><small class="text-muted">Presented by : Rumah Kita</p>
+              <p class="card-text"><small class="" style="color:crimson">Done</small></p>
             </div>
           </div>
         </div>

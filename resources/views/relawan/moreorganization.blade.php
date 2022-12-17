@@ -30,11 +30,7 @@
         </div>
 
         <div class="row row-cols-1 row-cols-md-4 g-4">
-<<<<<<< Updated upstream
-          @foreach( $detorganisasi as $item)
-=======
           @foreach( $organisasis as $organisasi)
->>>>>>> Stashed changes
             <div class="col">
               <div class="card h-100">
                 <img src="{{ $organisasi->path }}" class="card-img-top" alt="..." style="height: 150px ">
