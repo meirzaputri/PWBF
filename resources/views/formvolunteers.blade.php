@@ -113,7 +113,7 @@
                                     </div>
 
                                     <div class="d-flex justify-content-end pt-3">
-                                        <button type="submit" class="btn btn-outline-dark">Submit form</button>
+                                        <button type="submit" class="btn btn-outline-dark">Submit Form</button>
                                     </div>
 
                                     <input type="hidden" name="email" value="{{ $validData['email'] }}">
