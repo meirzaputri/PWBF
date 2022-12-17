@@ -79,7 +79,7 @@
         </div>
 
         <div class="xp-breadcrumbbar text-center">
-            <h4 class="page-title">Hello, Organization</h4>
+            <h4 class="page-title">Hello, Organization {{ auth()->user()->name }}</h4>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Volunteer-an</a></li>
                 <li class="breadcrumb-item active" aria-curent="page">Dashboard</li>

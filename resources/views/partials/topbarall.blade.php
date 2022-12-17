@@ -62,10 +62,12 @@
                                             <span class="material-icons">settings</span>
                                             Settings
                                         </a></li>
-                                    <li><a href="#">
-                                            <span class="material-icons">logout</span>
-                                            Logout
-                                        </a></li>
+                                    <li> <form action="/logout" method="post">
+                                        @csrf
+                                        <button type="submit" style="font-size: 14px">
+                                            <i class="bi bi-box-arrow-right" style="margin-right: 3px"></i>Logout
+                                        </button>
+                                    </form></li>
 
                                 </ul>
                             </li>
@@ -79,7 +81,7 @@
         </div>
 
         <div class="xp-breadcrumbbar text-center">
-            <h4 class="page-title">Hello, Admin</h4>
+            <h4 class="page-title">Hello, Admin {{ auth()->user()->name }}</h4>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Volunteer-an</a></li>
                 {{-- <li class="breadcrumb-item active" aria-curent="page">Dashboard</li> --}}

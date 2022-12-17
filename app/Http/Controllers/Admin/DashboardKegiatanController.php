@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Kegiatan;
+use App\Models\Organisasi;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Symfony\Component\Console\Input\Input;
 
 class DashboardKegiatanController extends Controller
 {
@@ -16,17 +18,17 @@ class DashboardKegiatanController extends Controller
     public function index()
     {
             $kegiatans = Kegiatan::all();
-            return view('eventssidebar',[
+            return view('admin.eventssidebar',[
                 'kegiatans' => $kegiatans
             ]);
     }
-    public function indexorg()
-    {
-            $kegiatans = Kegiatan::all();
-            return view('dashboardorganisasi',[
-                'kegiatans' => $kegiatans
-            ]);
-    }
+    // public function indexorg()
+    // {
+    //         $kegiatans = Kegiatan::all();
+    //         return view('dashboardorganisasi',[
+    //             'kegiatans' => $kegiatans
+    //         ]);
+    // }
 
 
     /**
@@ -56,9 +58,12 @@ class DashboardKegiatanController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Kegiatan $detkegiatan)
     {
-        //
+            $detailData = Kegiatan::find($detkegiatan->id);
+            return view('admin.showdatakegiatan', [
+                'kegiatan'=>$detailData
+            ]);
     }
 
     /**
@@ -67,9 +72,11 @@ class DashboardKegiatanController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Kegiatan $event)
     {
-        //
+        return view('admin.editdatakegiatan', [
+            'kegiatan' => $event
+        ]);
     }
 
     /**
@@ -79,9 +86,27 @@ class DashboardKegiatanController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Kegiatan $event)
     {
-        //
+        // dd(->id));
+        $organisasi = Organisasi::where('nama_organisasi', $request->input('nama_organisasi'))->first();
+        // dd($organisasi->id);
+        $request->merge(['organisasi_id', $organisasi->id]);
+        // dd($request->input('organisasi_id'));
+        $validatedData = $request->validate([
+            'nama_event' => 'required',
+            'organisasi_id' => 'required',
+            'tglmulai_event' => 'required',
+            'tglberakhir_event' => 'required',
+            'lokasi_event' => 'required',
+            'status_event' => 'required',
+            'deskripsi_event' => 'required'
+       
+        ]);
+        Kegiatan::where('id', $event->id)
+        ->update($validatedData);
+
+        return redirect('/events')->with('success', 'Data has been updated!');
     }
 
     /**
@@ -90,8 +115,9 @@ class DashboardKegiatanController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Kegiatan $event)
     {
-        //
+        Kegiatan::destroy($event->id);
+        return redirect('/events')->with ('success', 'Data has been deleted');
     }
 }

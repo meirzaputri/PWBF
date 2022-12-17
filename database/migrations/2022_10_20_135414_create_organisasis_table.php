@@ -15,7 +15,7 @@ class CreateOrganisasisTable extends Migration
     {
         Schema::create('organisasis', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('divisi_id');
+            $table->foreignId('divisi_id')->onDelete('cascade')->onUpdate('cascade');
             $table->string('nama_organisasi');
             $table->string('path');
             $table->string('alamat_organisasi');
@@ -23,7 +23,8 @@ class CreateOrganisasisTable extends Migration
             $table->string('notelp_organisasi', 15);
             $table->string('username_organisasi',100)->unique();
             $table->string('password_organisasi', 100);
-            $table->integer('level');
+            $table->text('deskripsi_organisasi');
+            $table->boolean('status_organisasi');
             $table->timestamps();
         });
     }

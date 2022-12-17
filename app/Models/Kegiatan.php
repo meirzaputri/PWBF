@@ -14,6 +14,9 @@ class Kegiatan extends Model
     use HasFactory;
 
     protected $guarded = ["id"];
+    protected $attributes = [
+        'status_event' => 1
+    ];
 
     public function organisasi()
     {
@@ -29,6 +32,4 @@ class Kegiatan extends Model
     {
         return $this->hasMany(PendaftaranKegiatan::class);
     }
-    
 }
-

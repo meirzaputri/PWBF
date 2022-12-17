@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    
+
 
     <!--google material icon-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
@@ -34,7 +34,7 @@
         <div class="body-overlay"></div>
 
         <!-------sidebar--design------------>
-@include('partials.sidebaradmin')
+        @include('partials.sidebaradmin')
 
 
 
@@ -42,60 +42,60 @@
 
         <div id="content">
 
-           @include('partials.topbarall')
+            @include('partials.topbarall')
 
             <!------main-content-start----------->
 
-        @yield('content')
-
-
+            @yield('content')
+            
             <!----footer-design------------->
+            <div>
 
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="footer-in">
-                        <p class="mb-0">&copy 2021 Vishweb Design . All Rights Reserved.</p>
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="footer-in">
+                            <p class="mb-0">&copy 2021 Vishweb Design . All Rights Reserved.</p>
+                        </div>
                     </div>
-                </div>
-            </footer>
+                </footer>
 
 
 
+
+            </div>
 
         </div>
 
-    </div>
 
 
-
-    <!-------complete html----------->
-
+        <!-------complete html----------->
 
 
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="{{ asset('import/js/jquery-3.3.1.slim.min.js') }}"></script>
-    <script src="{{ asset('import/js/popper.min.js') }}"></script>
-    <script src="{{ asset('import/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('import/js/jquery-3.3.1.min.js') }}"></script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="{{ asset('import/js/jquery-3.3.1.slim.min.js') }}"></script>
+        <script src="{{ asset('import/js/popper.min.js') }}"></script>
+        <script src="{{ asset('import/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('import/js/jquery-3.3.1.min.js') }}"></script>
 
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(".xp-menubar").on('click', function() {
-                $("#sidebar").toggleClass('active');
-                $("#content").toggleClass('active');
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".xp-menubar").on('click', function() {
+                    $("#sidebar").toggleClass('active');
+                    $("#content").toggleClass('active');
+                });
+
+                $('.xp-menubar,.body-overlay').on('click', function() {
+                    $("#sidebar,.body-overlay").toggleClass('show-nav');
+                });
+
             });
-
-            $('.xp-menubar,.body-overlay').on('click', function() {
-                $("#sidebar,.body-overlay").toggleClass('show-nav');
-            });
-
-        });
-    </script>
+        </script>
 
 
 
