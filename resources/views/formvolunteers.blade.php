@@ -111,7 +111,6 @@
                                             class="form-control form-control-lg" />
                                         <label class="form-label" for="form3Example9">Job</label>
                                     </div>
-
                                     <div class="d-flex justify-content-end pt-3">
                                         <button type="submit" class="btn btn-outline-dark">Submit Form</button>
                                     </div>
