@@ -27,7 +27,7 @@ class CreateRelawansTable extends Migration
             $table->string('username_relawan',100)->unique();
             $table->string('password_relawan', 100);
             $table->boolean('status_relawan');
-            $table->integer('level');
+         
             $table->timestamps();
             
         });

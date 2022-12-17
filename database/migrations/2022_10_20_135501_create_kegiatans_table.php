@@ -15,14 +15,14 @@ class CreateKegiatansTable extends Migration
     {
         Schema::create('kegiatans', function (Blueprint $table) {
             $table->id();
-              // $table->foreignId('admin_id')
-              $table->foreignId('organisasi_id');
-              $table->string('nama_event');
-              $table->date('tglmulai_event');
-              $table->date('tglberakhir_event');
-              $table->text('deskripsi_event');
-              $table->string('lokasi_event');
-              $table->boolean('status_event');
+            // $table->foreignId('admin_id')
+            $table->foreignId('organisasi_id')->onDelete('cascade')->onUpdate('cascade');
+            $table->string('nama_event');
+            $table->date('tglmulai_event');
+            $table->date('tglberakhir_event');
+            $table->text('deskripsi_event');
+            $table->string('lokasi_event');
+            $table->boolean('status_event');
             $table->timestamps();
         });
     }

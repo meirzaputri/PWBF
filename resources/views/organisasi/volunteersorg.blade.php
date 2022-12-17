@@ -83,6 +83,9 @@
                         <th>{{ $relawan->created_at }}</th>
                         <th>{{ $relawan->email_relawan }}</th>
                         <th>
+                            <a href="/detrelawanorg/{{ $relawan->id }}" class="">
+                                <i class="material-icons" data-toggle="tooltip" title="Show Detail">&#xE264;</i>
+                            </a>
                             <a href="#editEmployeeModal" class="edit" data-toggle="modal">
                                 <i class="material-icons" data-toggle="tooltip"
                                     title="Edit">&#xE254;</i>

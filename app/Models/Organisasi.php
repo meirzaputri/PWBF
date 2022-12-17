@@ -17,6 +17,10 @@ class Organisasi extends Model
 
     protected $guarded = ["id"];
 
+    protected $attributes = [
+        'status_organisasi' => 1
+    ];
+
     public function divisi()
     {
         return $this->belongsTo(Divisi::class);

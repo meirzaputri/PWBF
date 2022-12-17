@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    
+
 
     <!--google material icon-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
@@ -34,7 +34,7 @@
         <div class="body-overlay"></div>
 
         <!-------sidebar--design------------>
-@include('partials.sidebaradmin')
+        @include('partials.sidebaradmin')
 
 
 
@@ -42,22 +42,15 @@
 
         <div id="content">
 
-           @include('partials.topbaradmin')
+            @include('partials.topbaradmin')
 
             <!------main-content-start----------->
 
-        @yield('content')
+            @yield('content')
 
 
             <!----footer-design------------->
 
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="footer-in">
-                        <p class="mb-0">&copy 2021 Vishweb Design . All Rights Reserved.</p>
-                    </div>
-                </div>
-            </footer>
 
 
 
@@ -65,6 +58,16 @@
         </div>
 
     </div>
+   <div> 
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="footer-in">
+                <p class="mb-0">&copy 2021 Vishweb Design . All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    </footer>
 
 
 

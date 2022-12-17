@@ -28,7 +28,7 @@ class CreateUsersTable extends Migration
             $table->string('pekerjaan_relawan')->nullable();
             $table->boolean('stts_relawan')->nullable();
             $table->string('level');
-
+            $table->foreignId('organisasi_id')->nullable();
             
             $table->timestamps();
         });

@@ -25,7 +25,7 @@ class RelawanSeeder extends Seeder
             'username_relawan'=> 'denabb',
             'password_relawan'=>  bcrypt('1234567'),
             'status_relawan'=> true,
-            'level'=> 1,
+            
         ]);
 
         Relawan::create([
@@ -40,7 +40,7 @@ class RelawanSeeder extends Seeder
             'username_relawan'=> 'meirza',
             'password_relawan'=>  bcrypt('1357911'),
             'status_relawan'=> true,
-            'level'=> 1,
+           
         ]);
         Relawan::create([
             'nama_relawan'=>'Gamas Namara Akbar',
@@ -54,7 +54,7 @@ class RelawanSeeder extends Seeder
             'username_relawan'=> 'gamas',
             'password_relawan'=>  bcrypt('3007200'),
             'status_relawan'=> true,
-            'level'=> 1,
+           
         ]);
         Relawan::create([
             'nama_relawan'=>'Desmona Adelia Camila',
@@ -68,7 +68,7 @@ class RelawanSeeder extends Seeder
             'username_relawan'=> 'della',
             'password_relawan'=>  bcrypt('2001033'),
             'status_relawan'=> true,
-            'level'=> 1,
+        
         ]);
     }
 }

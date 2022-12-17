@@ -11,7 +11,7 @@ class OrganisasiController extends Controller
     public function index()
     {
         $kegiatans = Kegiatan::where('organisasi_id',1)->get();
-        return view('dashboardorganisasi', [
+        return view('organisasi.dashboardorganisasi', [
             'kegiatans' => $kegiatans
 
         ]);

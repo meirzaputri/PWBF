@@ -15,7 +15,7 @@ class CreatePendaftaranKegiatansTable extends Migration
     {
         Schema::create('pendaftaran_kegiatans', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('kegiatan_id');
+            $table->foreignId('kegiatan_id')->onDelete('cascade')->onUpdate('cascade');
             $table->foreignId('relawan_id');
             $table->dateTime('tglpendaftaran');
             $table->char(1);

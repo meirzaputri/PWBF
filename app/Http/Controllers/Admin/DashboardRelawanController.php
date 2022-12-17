@@ -16,18 +16,18 @@ class DashboardRelawanController extends Controller
     public function index()
     {
         $relawans = Relawan::all();
-        return view('volunsidebar',[
+        return view('admin.volunsidebar', [
             'relawans' => $relawans
         ]);
     }
-      public function indexorg()
+    public function indexorg()
     {
-            $relawans = Relawan::all();
-            return view('volunteersorg',[
-                'relawans' => $relawans
-            ]);
+        $relawans = Relawan::all();
+        return view('organisasi.volunteersorg', [
+            'relawans' => $relawans
+        ]);
     }
-    
+
 
     /**
      * Show the form for creating a new resource.
@@ -36,7 +36,7 @@ class DashboardRelawanController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.tambahdatarelawan');
     }
 
     /**
@@ -48,7 +48,19 @@ class DashboardRelawanController extends Controller
 
     public function store(Request $request)
     {
-        //
+        // $validatedData = $request->validate([
+        //     'nama_relawan' => 'required',
+        //     'tgllahir_relawan' => 'required',
+        //     'usia_relawan' => 'required',
+        //     'jk_relawan' => 'required',
+        //     'alamat_relawan' => 'required',
+        //     'pekerjaan_relawan' => 'required',
+        //     'notelp_relawan' => 'required',
+        //     'email_relawan' => 'required|email:dns',
+        //     'username_relawan' => 'required|min:4'
+        // ]);
+        // Relawan::create($validatedData);
+        // return redirect('/volunteer')->with ('success', 'New data has been added');
     }
 
     /**
@@ -57,9 +69,12 @@ class DashboardRelawanController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Relawan $detidentitasrelawan)
     {
-        //
+        $detailData = Relawan::find($detidentitasrelawan->id);
+        return view('admin.showdatarelawan', [
+            'relawan' => $detailData
+        ]);
     }
 
     /**
@@ -68,9 +83,11 @@ class DashboardRelawanController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Relawan $volunteer)
     {
-        //
+        return view('admin.editdatarelawan', [
+            'relawan' => $volunteer
+        ]);
     }
 
     /**
@@ -80,9 +97,23 @@ class DashboardRelawanController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Relawan $volunteer)
     {
-        //
+        $validatedData = $request->validate([
+            'nama_relawan' => 'required',
+            'tgllahir_relawan' => 'required',
+            'usia_relawan' => 'required',
+            'jk_relawan' => 'required',
+            'alamat_relawan' => 'required',
+            'pekerjaan_relawan' => 'required',
+            'notelp_relawan' => 'required',
+            'email_relawan' => 'required|email:dns',
+        ]);
+        
+        Relawan::where('id', $volunteer->id)
+            ->update($validatedData);
+
+        return redirect('/volunteer')->with('success', 'Data has been updated!');
     }
 
     /**
@@ -91,8 +122,9 @@ class DashboardRelawanController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Relawan $volunteer)
     {
-        //
+        Relawan::destroy($volunteer->id);
+        return redirect('/volunteer')->with('success', 'Data has been deleted');
     }
 }

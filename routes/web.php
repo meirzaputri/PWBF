@@ -7,14 +7,17 @@ use App\Models\Organisasi;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\controllerhome;
-use App\Http\Controllers\Admin\AdminController;
-use App\Http\Controllers\Admin\DashboardKegiatanController;
-use App\Http\Controllers\Admin\DashboardRelawanController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\Relawan\RelawanController;
-use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\LandingPageController;
+use App\Http\Controllers\Admin\DashboardFaunaController;
 use App\Http\Controllers\Organisasi\OrganisasiController;
+use App\Http\Controllers\Admin\DashboardRelawanController;
+use App\Http\Controllers\Admin\DashboardKegiatanController;
+use App\Http\Controllers\Admin\DashboardOrganisasiController;
+use App\Http\Controllers\Admin\DashboardOrganisasiPerDivisiController;
+use App\Http\Controllers\Organisasi\DashboardOrganisasiVolunteersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,8 +31,8 @@ use App\Http\Controllers\Organisasi\OrganisasiController;
 */
 
 Route::get('/', [LandingPageController::class, 'index']);
-Route::get('/volunteers',[RelawanController::class,'index']);
-Route::get('/moreorganization',[RelawanController::class,'moreorganization']);
+// Route::get('/volunteers', [RelawanController::class, 'index']);
+// Route::get('/moreorganization', [RelawanController::class, 'moreorganization']);
 
 // Route::get('/about', function () {
 //     return view('welcome');
@@ -46,11 +49,22 @@ Route::get('/moreorganization',[RelawanController::class,'moreorganization']);
 // Route::get('/contact', function () {
 //     return view('contact');
 // });;
-Route::group(['middleware' => ['auth', 'ceklevel:admin' ]], function(){
+Route::group(['middleware' => ['auth', 'ceklevel:admin']], function () {
     Route::get('/admin', [AdminController::class, 'index']);
-    Route::get('/volunteer', [DashboardRelawanController::class, 'index']);
-    Route::get('/events', [DashboardKegiatanController::class, 'index']);
+    Route::resource('/events', DashboardKegiatanController::class);
+    Route::resource('/volunteer', DashboardRelawanController::class);
+    Route::resource('/allorganisasi', DashboardOrganisasiController::class);
+    Route::resource('/detidentitasrelawan', DashboardRelawanController::class);
+    Route::resource('/detkegiatan', DashboardKegiatanController::class);
+    Route::resource('/detallorganisasi', DashboardOrganisasiController::class);
+    Route::resource('/orgperdiv', DashboardOrganisasiPerDivisiController::class);
+    
 });
+Route::group(['middleware' => ['auth', 'ceklevel:organisasi']], function () {
+    Route::get('/dashboardorganisasi', [OrganisasiController::class, 'index']);
+    Route::get('/volunteersorg', [DashboardOrganisasiVolunteersController::class, 'index']);
+});
+
 Route::get('/login', [LoginController::class, "login"])->name('login');
 Route::post('/login', [LoginController::class, "authenticate"]);
 Route::post('/logout', [LoginController::class, "logout"]);
@@ -59,20 +73,25 @@ Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/formvolunteers', [RegisterController::class, 'register']);
 Route::post('/formvolunteers2', [RegisterController::class, 'register2']);
 
-// Route::get('/about', function () {
-//     return view('partials.about');
-// });;
-
 Route::get('/detailevent', function () {
     return view('detevent', [
         'login' => true
     ]);
 });;
+
+// Route::get('/about', function () {
+//     return view('partials.about');
+// });;
+// Route::get('/dashboardorganisasi', function () {
+//     return view('organisasi.dashboardorganisasi');
+// });;
+// Route::get('/fauna', function () {
+//     return view('admin.faunaadmin');
 Route::post('/Organisasi/{organisasi}', function (Organisasi $organisasi) {
-    return view ('relawan.moreorganization',);
+    return view('relawan.moreorganization',);
 });
 Route::get('/moreorganization', function () {
-    return view ('relawan.moreorganization', [
+    return view('relawan.moreorganization', [
         'login' => true
     ]);
 });;
@@ -93,9 +112,9 @@ Route::get('/moreorganization', function () {
     return view('relawan.moreorganization');
 });;
 
-Route::get('/detailorg',[OrganisasiController::class, 'index']);;
+Route::get('/detailorg', [OrganisasiController::class, 'index']);;
 
-Route::get('/detevent', [KegiatanController::class, 'index']);
+//Route::get('/detevent', [KegiatanController::class, 'index']);
 
 Route::get('/about', function () {
     return view('about');
@@ -107,15 +126,13 @@ Route::get('/contactus', function () {
     return view('contactus1');
 });;
 
-Route::get('/dashboardorganisasi', function () {
-    return view('organisasi.dashboardorganisasi');
-});;
+
 
 Route::get('/dashboardvolunteer', function () {
     return view('relawan.dashboardvolunteer');
 });;
 
-Route::get('/volunteersorg', [DashboardRelawanController::class, 'indexorg']);;
+
 
 Route::get('/pedulipendidikan', function () {
     return view('pedulipendidikan');
@@ -128,9 +145,8 @@ Route::get('/mendongengtasya', function () {
 Route::get('/haridongeng', function () {
     return view('haridongeng');
 });;
-Route::get('/fauna', function () {
-    return view('admin.faunaadmin');
-});;
+
+
 Route::get('/kesehatan', function () {
     return view('admin.kesehatanadmin');
 });;
@@ -148,12 +164,8 @@ Route::get('/lingkungan', function () {
 });;
 Route::get('/bencana', function () {
     return view('admin.bencana');
-});;
-
+});
 
 Route::get('/history', function () {
     return view('relawan.history');
-});;
-
-
-
+});

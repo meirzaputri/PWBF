@@ -16,15 +16,18 @@ class Relawan extends Model
 
     protected $guarded = ["id"];
 
-    public function admins(){
+    public function admins()
+    {
         return $this->belongsToMany(Admin::class, RelawanAdmin::class);
     }
 
-    public function organisasis(){
+    public function organisasis()
+    {
         return $this->belongsToMany(Organisasi::class, RelawanOrganisasi::class);
     }
-    
-    public function pendaftarankegiatans(){
+
+    public function pendaftarankegiatans()
+    {
         return $this->hasMany(PendaftaranKegiatan::class);
     }
 
