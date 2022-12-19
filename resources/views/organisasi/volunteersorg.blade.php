@@ -46,9 +46,13 @@
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center">
-                            <h2 class="ml-lg-2">Volunteers</h2>
+                            <h2 class="ml-lg-2">Manage Volunteers</h2>
                         </div> 
-                        <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">                         
+                        <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">  
+                            <a href="/volunteersorg/create" class="btn btn-success">
+                                <i class="material-icons">&#xE147;</i>
+                                <span>Add New Volunteer</span>
+                            </a>                       
                             <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal">
                                 <i class="material-icons">&#xE15C;</i>
                                 <span>Delete</span>
@@ -90,9 +94,14 @@
                                 <i class="material-icons" data-toggle="tooltip"
                                     title="Edit">&#xE254;</i>
                             </a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                                <i class="material-icons" data-toggle="tooltip"
-                                    title="Delete">&#xE872;</i>
+                            <a href="" class="delete">
+                                <form action="/relawansorg/{{ $relawan->id }}" method="post">
+                                    @method('delete')
+                                    @csrf
+                                    <button class="material-icons border-0 bg-color:transparent"
+                                        onclick="return confirm('Are you sure to delete this data?')"
+                                        data-toggle="tooltip" title="Delete">&#xE872;</button>
+                                </form>
                             </a>
                         </th>
                     </tr>

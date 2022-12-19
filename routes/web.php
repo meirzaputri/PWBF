@@ -11,12 +11,16 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\LandingPageController;
+use App\Http\Controllers\RegisterorgController;
+use App\Http\Controllers\Relawan\RelawanController;
 use App\Http\Controllers\Admin\DashboardFaunaController;
+use App\Http\Controllers\OrganisasiRegistrasiController;
 use App\Http\Controllers\Organisasi\OrganisasiController;
 use App\Http\Controllers\Admin\DashboardRelawanController;
 use App\Http\Controllers\Admin\DashboardKegiatanController;
 use App\Http\Controllers\Admin\DashboardOrganisasiController;
 use App\Http\Controllers\Admin\DashboardOrganisasiPerDivisiController;
+use App\Http\Controllers\Organisasi\DashboardOrganisasiEventsController;
 use App\Http\Controllers\Organisasi\DashboardOrganisasiVolunteersController;
 
 /*
@@ -62,9 +66,13 @@ Route::group(['middleware' => ['auth', 'ceklevel:admin']], function () {
 });
 Route::group(['middleware' => ['auth', 'ceklevel:organisasi']], function () {
     Route::get('/dashboardorganisasi', [OrganisasiController::class, 'index']);
-    Route::get('/volunteersorg', [DashboardOrganisasiVolunteersController::class, 'index']);
+    Route::resource('/volunteersorg', DashboardOrganisasiVolunteersController::class);
+    Route::resource('/detrelawanorg', DashboardOrganisasiVolunteersController::class);
+    Route::resource('/eventsorg', DashboardOrganisasiEventsController::class);  
+    Route::resource('/detkegiatanorg', DashboardOrganisasiEventsController::class);
 });
-
+Route::post('/orgregister', [OrganisasiRegistrasiController::class, 'store']);
+Route::get('/orgregister', [OrganisasiRegistrasiController::class, 'index']);
 Route::get('/login', [LoginController::class, "login"])->name('login');
 Route::post('/login', [LoginController::class, "authenticate"]);
 Route::post('/logout', [LoginController::class, "logout"]);

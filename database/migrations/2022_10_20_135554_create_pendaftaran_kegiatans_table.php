@@ -18,7 +18,6 @@ class CreatePendaftaranKegiatansTable extends Migration
             $table->foreignId('kegiatan_id')->onDelete('cascade')->onUpdate('cascade');
             $table->foreignId('relawan_id');
             $table->dateTime('tglpendaftaran');
-            $table->char(1);
             $table->timestamps();
         });
     }

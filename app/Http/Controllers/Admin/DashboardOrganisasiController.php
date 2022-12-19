@@ -69,7 +69,8 @@ class DashboardOrganisasiController extends Controller
     public function edit(Organisasi $allorganisasi)
     {
         return view('admin.editdataorgall', [
-            'organisasi' => $allorganisasi
+            'organisasi' => $allorganisasi,
+            'divisis'=> Divisi::all()
         ]);
     }
 

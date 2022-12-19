@@ -23,7 +23,7 @@ class OrganisasiSeeder extends Seeder
             'notelp_organisasi' => '0315465436',
             'username_organisasi' => 'SRK',
             'password_organisasi' => bcrypt('1133557'),
-            // 'level'=>3,
+            'deskripsi_organisasi' => 'coba'
         ]);
         Organisasi::create([
             'divisi_id' => 1,
@@ -34,7 +34,7 @@ class OrganisasiSeeder extends Seeder
             'notelp_organisasi' => '08765432145',
             'username_organisasi' => 'RumahMillenials',
             'password_organisasi' => bcrypt('246822'),
-            // 'level'=>3,
+            'deskripsi_organisasi' => 'coba'
         ]);
         Organisasi::create([
             'divisi_id' => 1,
@@ -45,7 +45,7 @@ class OrganisasiSeeder extends Seeder
             'notelp_organisasi' => '08153759713',
             'username_organisasi' => 'BasComm',
             'password_organisasi' => bcrypt('7547652'),
-            // 'level'=>3,
+            'deskripsi_organisasi' => 'coba'
         ]);
         Organisasi::create([
             'divisi_id' => 2,
@@ -56,7 +56,7 @@ class OrganisasiSeeder extends Seeder
             'notelp_organisasi' => '0811958876',
             'username_organisasi' => 'Relawan Dokter Hewan Indonesia',
             'password_organisasi' => bcrypt('234509'),
-            // 'level'=>3,
+            'deskripsi_organisasi' => 'coba'
         ]);
         Organisasi::create([
             'divisi_id' => 2,
@@ -67,7 +67,7 @@ class OrganisasiSeeder extends Seeder
             'notelp_organisasi' => '085100647575',
             'username_organisasi' => 'Perisai',
             'password_organisasi' => bcrypt('845757'),
-            // 'level'=>3,
+            'deskripsi_organisasi' => 'coba'
         ]);
         Organisasi::create([
             'divisi_id' => 2,
@@ -78,7 +78,7 @@ class OrganisasiSeeder extends Seeder
             'notelp_organisasi' => '082324252627',
             'username_organisasi' => 'PokMaWas',
             'password_organisasi' => bcrypt('747474'),
-            // 'level'=>3,
+            'deskripsi_organisasi' => 'coba'
         ]);  
         Organisasi::create([
             'divisi_id' => 3,
@@ -89,7 +89,7 @@ class OrganisasiSeeder extends Seeder
             'notelp_organisasi' => '031770494949',
             'username_organisasi' => 'KrekI',
             'password_organisasi' => bcrypt('6749378'),
-            // 'level'=>3,
+            'deskripsi_organisasi' => 'coba'
         ]);      
         Organisasi::create([
             'divisi_id' => 3,
@@ -100,7 +100,7 @@ class OrganisasiSeeder extends Seeder
             'notelp_organisasi' => '089768657432',
             'username_organisasi' => 'DDV',
             'password_organisasi' => bcrypt('894785'),
-            // 'level'=>3,
+            'deskripsi_organisasi' => 'coba'
         ]); 
         Organisasi::create([
             'divisi_id' => 5,
@@ -111,7 +111,7 @@ class OrganisasiSeeder extends Seeder
             'notelp_organisasi' => '08222121234',
             'username_organisasi' => 'relindo',
             'password_organisasi' => bcrypt('123'),
-            // 'level'=>3,
+            'deskripsi_organisasi' => 'coba'
         ]);
 
         Organisasi::create([
@@ -123,7 +123,7 @@ class OrganisasiSeeder extends Seeder
             'notelp_organisasi' => '089765490001',
             'username_organisasi' => 'indogg',
             'password_organisasi' => bcrypt('indogg123'),
-            // 'level'=>3,
+            'deskripsi_organisasi' => 'coba'
         ]);
         Organisasi::create([
             'divisi_id' => 8,
@@ -134,7 +134,7 @@ class OrganisasiSeeder extends Seeder
             'notelp_organisasi' => '08123456789',
             'username_organisasi' => 'pandulisane',
             'password_organisasi' => bcrypt('p$nduL1san3'),
-            // 'level'=>3,
+            'deskripsi_organisasi' => 'coba'
         ]);
         Organisasi::create([
             'divisi_id' => 6,
@@ -145,7 +145,7 @@ class OrganisasiSeeder extends Seeder
             'notelp_organisasi' => '0813579753',
             'username_organisasi' => 'beyouth',
             'password_organisasi' => bcrypt('beyouth357'),
-            // 'level'=>3,
+            'deskripsi_organisasi' => 'coba'
         ]);
     }
 }

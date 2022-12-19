@@ -24,5 +24,11 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-  
+  public function organisasi(){
+return $this->belongsTo(Organisasi::class);
+  }
+
+  public function divisi(){
+    return $this->belongsTo(Divisi::class);
+  }
 }

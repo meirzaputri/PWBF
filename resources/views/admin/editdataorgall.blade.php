@@ -20,7 +20,24 @@
                         </div>
                     @enderror
                 </div>
-                <div class="mb-3">
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="divisi">Division</label>
+                    <select class="form-select" name="divisi_id">
+                        @foreach ($divisis as $divisi)
+                        @if (old('divisi_id', $organisasi->divisi_id == $divisi->id))
+                        <option value="{{ $divisi->id }}" selected>{{ $divisi->nama_divisi }}</option> 
+                        @else
+                        <option value="{{ $divisi->id }}">{{ $divisi->nama_divisi }}</option> 
+                        @endif
+                        @endforeach
+                    </select>
+                    @error('name')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                </div>
+                {{-- <div class="mb-3">
                     <label for="divisi" class="form-label">Division</label>
                     <input type="text" class="form-control @error('divisi')is-invalid @enderror"
                         id="divisi" name="divisi" required
@@ -30,7 +47,7 @@
                             {{ $message }}
                         </div>
                     @enderror
-                </div>
+                </div> --}}
                 <div class="mb-3">
                     <label for="alamat_organisasi" class="form-label">Address</label>
                     <input type="text" class="form-control @error('alamat_organisasi')is-invalid @enderror"

@@ -1,4 +1,4 @@
-@extends('admin')
+@extends('organisasi')
 @section('content')
     <div class="main-content">
         <div class="row">
@@ -7,19 +7,16 @@
                     @if (session()->has('success'))
                         <div class="alert alert-success" role="alert"> {{ session('success') }} </div>
                     @endif
-               @if ($relawans->count())
-                   
-              
                     <div class="table-title">
                         <div class="row">
                             <div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center">
-                                <h2 class="ml-lg-2">Manage Volunteers</h2>
+                                <h2 class="ml-lg-2">Manage Events</h2>
                             </div>
                             <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">
-                                {{-- <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
+                                <a href="/eventsorg/create" class="btn btn-success">
                                     <i class="material-icons">&#xE147;</i>
-                                    <span>Add New Volunteer</span> --}}
-                            
+                                    <span>Add New Event</span>
+                                </a>
                                 <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal">
                                     <i class="material-icons">&#xE15C;</i>
                                     <span>Delete</span>
@@ -34,36 +31,34 @@
                                 <th><span class="custom-checkbox">
                                         <input type="checkbox" id="selectAll">
                                         <label for="selectAll"></label></th>
-                                {{-- <th>        </th> --}}
                                 <th>No.</th>
                                 <th>Name</th>
-                                <th>Age</th>
-                                <th>City</th>
-                                <th>Contact (email)</th>
+                                <th>Location</th>
+                                <th>Description</th>
                                 <th>Activity</th>
                             </tr>
                         </thead>
 
                         <tbody>
-                            @foreach ($relawans as $relawan)
+                            @foreach ($kegiatans as $kegiatan)
                                 <tr>
                                     <th><span class="custom-checkbox">
                                             <input type="checkbox" id="checkbox1" name="option[]" value="1">
                                             <label for="checkbox1"></label></th>
                                     <th>{{ $loop->iteration }}</th>
-                                    <th>{{ $relawan->nama_relawan }}</th>
-                                    <th>{{ $relawan->tgllahir_relawan }}</th>
-                                    <th>{{ $relawan->alamat_relawan }}</th>
-                                    <th>{{ $relawan->email_relawan }}</th>
+                                    <th>{{ $kegiatan->nama_event }}</th>
+                                    <th>{{ $kegiatan->lokasi_event }}</th>
+                                    <th>{{ $kegiatan->deskripsi_event }}
+                                    </th>
                                     <th>
-                                        <a href="/detidentitasrelawan/{{ $relawan->id }}" class="">
+                                        <a href="/detkegiatanorg/{{ $kegiatan->id }}" class="">
                                             <i class="material-icons" data-toggle="tooltip" title="Show Detail">&#xE264;</i>
                                         </a>
-                                        <a href="/volunteer/{{ $relawan->id }}/edit" class="edit">
+                                        <a href="/eventsorg/{{ $kegiatan->id }}/edit" class="edit">
                                             <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
                                         </a>
                                         <a href="" class="delete">
-                                            <form action="/volunteer/{{ $relawan->id }}" method="post">
+                                            <form action="/eventsorg/{{ $kegiatan->id }}" method="post">
                                                 @method('delete')
                                                 @csrf
                                                 <button class="material-icons border-0 bg-color:transparent"
@@ -74,7 +69,6 @@
                                     </th>
                                 </tr>
                             @endforeach
-
 
                         </tbody>
 
@@ -111,7 +105,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Add Relawan</h5>
+                            <h5 class="modal-title">Add Employees</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -153,7 +147,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Edit</h5>
+                            <h5 class="modal-title">Edit Employees</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -216,7 +210,4 @@
 
         </div>
     </div>
-    @else
-          <p class ="text-center fs-4">No post found.</p>         
-    @endif
 @endsection

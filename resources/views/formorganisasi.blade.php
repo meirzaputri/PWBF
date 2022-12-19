@@ -27,56 +27,113 @@
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-8">
                     <div class="card card-registration my-4">
-                        <form action="/formorganisasi2" method="post">
+                        <form action="/orgregister" method="post">
                             @csrf
                             <div class="col-xl-12">
                                 <div class="card-body p-md-5 text-black">
                                     <h3 class="mb-5 text-uppercase">Organization Registration form</h3>
-
                                     <div class="form-outline mb-4">
-                                        <input type="text" id="form3Example8" name="orgname"
-                                            class="form-control form-control-lg @error('orgname')is-invalid @enderror" required/>
-                                        <label class="form-label" for="form3Example8">Organization Name</label>
-                                         @error('orgname')
-                                                <div class="invalid-feedback">
-                                                 {{ $message }}
-                                            </div>
-                                            @enderror
-                                    </div>
-
-                                    <div class="form-outline mb-4">
-                                        <input type="text" id="form3Example8" name="alamat"
-                                            class="form-control form-control-lg @error('alamat')is-invalid @enderror" required/>
-                                        <label class="form-label" for="form3Example8">Organization Address</label>
-                                         @error('alamat')
-                                                <div class="invalid-feedback">
-                                                 {{ $message }}
-                                            </div>
-                                            @enderror
-                                    </div>
-
-                                    <div class="form-outline mb-4">
-                                        <input type="text" id="form3Example8" name="notelp"
-                                            class="form-control form-control-lg @error('notelp')is-invalid @enderror" required/>
-                                        <label class="form-label" for="form3Example8">Phone Number</label>
-                                        @error('notelp')
+                                        <label class="form-label" for="form2Example17">Email address</label>
+                                        <input type="email" id="form2Example17" name="email" class="form-control form-control-lg  @error('email') is-invalid @enderror" />
+                                        @error('email')
                                         <div class="invalid-feedback">
-                                         {{ $message }}
-                                    </div>
-                                    @enderror
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
+                                      </div>
+              
+                                      <div class="form-outline mb-4">
+                                          <label class="form-label" for="form2Example17"> Username</label>
+                                        <input type="text" id="form2Example18" name="username" class="form-control form-control-lg @error('username') is-invalid @enderror" />
+                                        @error('username')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
+                                      </div>
+                    
+                                      <div class="form-outline mb-4">
+                                          <label class="form-label" for="form2Example27">Password</label>
+                                        <input type="password" name="password" id="form2Example27" class="form-control form-control-lg @error('password') is-invalid @enderror" />
+                                        @error('password')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
+                                      </div>
+              
+                                      <div class="form-outline mb-4">
+                                          <label class="form-label" for="form2Example27">Confirm Password</label>
+                                        <input type="password" name="password_confirmation" id="form2Example28" class="form-control form-control-lg @error('password_confirmation') is-invalid @enderror" />
+                                        @error('password_confirmation')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
+                                      </div>
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="form3Example8">Name</label>
+                                        <input type="text" id="form3Example8" name="name"
+                                            class="form-control form-control-lg @error('name')is-invalid @enderror"
+                                            required />
+                                        @error('name')
+                                            <div class="invalid-feedback">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
                                     </div>
 
                                     <div class="form-outline mb-4">
-                                        <input type="email" id="form3Example9" name="email"
-                                            class="form-control form-control-lg" />
-                                        <label class="form-label" for="form3Example9">Email</label>
+                                        <label class="form-label" for="form3Example8">Division</label>
+                                        <select class="form-select" name="divisi_id">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">Bencana</option>
+                                            <option value="2">Fauna</option>
+                                            <option value="3">Kesehatan</option>
+                                            <option value="4">Lingkungan</option>
+                                            <option value="5">Pendidikan</option>
+                                            <option value="6">Pengembangan Masyarakat</option>
+                                            <option value="7">Seni dan Budaya</option>
+                                            <option value="8">Sosial</option>
+                                        </select>
+                                        @error('name')
+                                            <div class="invalid-feedback">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
                                     </div>
+
+
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="form3Example8">Address</label>
+                                        <input type="text" id="form3Example8" name="alamat"
+                                            class="form-control form-control-lg @error('alamat')is-invalid @enderror"
+                                            required />
+                                        @error('alamat')
+                                            <div class="invalid-feedback">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="form3Example8">Phone Number</label>
+                                        <input type="text" id="form3Example8" name="notelp"
+                                            class="form-control form-control-lg @error('notelp')is-invalid @enderror"
+                                            required />
+                                        @error('notelp')
+                                            <div class="invalid-feedback">
+                                                {{ $message }}
+                                            </div>
+                                        @enderror
+                                    </div>
+<input type="hidden" name="level" value="organisasi">
 
                                     <div class="d-flex justify-content-end pt-3">
                                         <button type="submit" class="btn btn-outline-dark">Submit form</button>
                                     </div>
 
-                                    {{-- <input type="hidden" name="email" value="{{ $validData['email'] }}"> --}}
+                                    {{-- <input type="hidden" name="email_organisasi" value="{{ $validData['email_organisasi'] }}"> --}}
                                     {{-- <input type="hidden" name="username" value="{{ $validData['username'] }}">
                                     <input type="hidden" name="password" value="{{ $validData['password'] }}"> --}}
                         </form>

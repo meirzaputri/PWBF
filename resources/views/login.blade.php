@@ -21,11 +21,7 @@
 
 <body class="bg-dark">
 
-    @if (session('loginError'))
-        <div class="alert alert-danger" role="alert">
-            {{ session('loginError') }}
-        </div>
-    @endif
+
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top bg-dark">
         <div class="container d-flex align-items-center justify-content-lg-between">
@@ -65,7 +61,7 @@
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
-
+           
             @if (!isset($login))
                 <a href="/login" class="get-started-btn scrollto">Login</a>
             @endif
@@ -86,7 +82,11 @@
                             </div>
                             <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                 <div class="card-body p-4 p-lg-5 text-black">
-
+                                    @if (session('loginError'))
+                                    <div class="alert alert-danger" role="alert">
+                                        {{ session('loginError') }}
+                                    </div>
+                                @endif
                                     <form method="post" action="/login">
                                         @csrf
                                         <div class="d-flex align-items-center mb-3 pb-1">
@@ -143,8 +143,10 @@
 
                                         <a class="small text-muted" href="#!">Forgoten password?</a>
                                         <p class="text-muted mb-2 pb-lg-2">Don't have an account? Register here</p>
-                                        <p class="small mb-2 pb-lg-2" style="color: #393f81;"><a href="/register" style="color: #393f81;">Register as Volunteer</a></p>
-                                        <p class="small mb-5 pb-lg-1" style="color: #393f81;"><a href="/orgregister" style="color: #393f81;">Register as Organization</a></p>
+                                        <p class="small mb-2 pb-lg-2" style="color: #393f81;"><a href="/register"
+                                                style="color: #393f81;">Register as Volunteer</a></p>
+                                        <p class="small mb-5 pb-lg-1" style="color: #393f81;"><a href="/orgregister"
+                                                style="color: #393f81;">Register as Organization</a></p>
                                         <a href="#!" class="small text-muted">Terms of use.</a>
                                         <a href="#!" class="small text-muted">Privacy policy</a>
                                     </form>

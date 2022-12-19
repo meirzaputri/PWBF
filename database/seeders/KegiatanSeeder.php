@@ -21,6 +21,7 @@ class KegiatanSeeder extends Seeder
             'tglberakhir_event' => '2022-10-22',
             'deskripsi_event' => 'Kegiatan mendongeng bersama anak-anak di Surabaya guna memperingati Hari Dongeng',
             'lokasi_event' => 'Surabaya',
+            'deskripsi_event' => 'coba',
             'status_event' => true
         ]);
 
@@ -31,6 +32,18 @@ class KegiatanSeeder extends Seeder
             'tglberakhir_event' => '2022-01-22',
             'deskripsi_event' => 'Mendongeng bersama kak Tasya tentang pentingnya pembangunan karakter sejak dini',
             'lokasi_event' => 'Surabaya',
+            'deskripsi_event' => 'coba',
+            'status_event' => true
+        ]);
+
+        Kegiatan::create([
+            'organisasi_id' => 13,
+            'nama_event' => 'Mendongeng Bersama Kak Tasya',
+            'tglmulai_event' => '2022-11-11',
+            'tglberakhir_event' => '2022-01-22',
+            'deskripsi_event' => 'Mendongeng bersama kak Tasya tentang pentingnya pembangunan karakter sejak dini',
+            'lokasi_event' => 'Surabaya',
+            'deskripsi_event' => 'coba',
             'status_event' => true
         ]);
     }

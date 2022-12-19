@@ -53,9 +53,9 @@
                         </div>
 
                         <div class="form-outline mb-4">
-                          <input type="text" id="form2Example18" name="orgname" class="form-control form-control-lg @error('orgname') is-invalid @enderror" />
-                          <label class="form-label" for="form2Example17">Organization Name</label>
-                          @error('orgname')
+                          <input type="text" id="form2Example18" name="username_organisasi" class="form-control form-control-lg @error('username_organisasi') is-invalid @enderror" />
+                          <label class="form-label" for="form2Example17"> Username</label>
+                          @error('username_organisasi')
                           <div class="invalid-feedback">
                               {{ $message }}
                           </div>

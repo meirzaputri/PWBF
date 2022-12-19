@@ -16,5 +16,8 @@ class Divisi extends Model
     {
         return $this->hasMany(Organisasi::class);
     }
+    public function user(){
+        return $this->hasOne(User::class);
+    }
     
 }

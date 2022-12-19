@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\Organisasi;
 
 use App\Models\Relawan;
+use App\Models\Organisasi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class DashboardOrganisasiVolunteersController extends Controller
 {
@@ -16,11 +18,13 @@ class DashboardOrganisasiVolunteersController extends Controller
      */
     public function index()
     {
+        $organisasi = Organisasi::where('nama_organisasi', Auth::user()->name)->first();
+        // dd($organisasi->id);
         $relawans = DB::select(DB::raw('SELECT * FROM relawans
                                 JOIN pendaftaran_kegiatans ON relawans.id = pendaftaran_kegiatans.relawan_id
-                                JOIN kegiatans ON pendaftaran_kegiatans.id = kegiatans.pendaftaran_kegiatan_id
-                                WHERE '));
-        return view('organisasi.volunteersorg',[
+                                JOIN kegiatans ON kegiatans.id =pendaftaran_kegiatans.kegiatan_id
+                                WHERE kegiatans.organisasi_id=:id'), ['id' => $organisasi->id]);
+        return view('organisasi.volunteersorg', [
             'relawans' => $relawans
         ]);
     }
@@ -32,7 +36,7 @@ class DashboardOrganisasiVolunteersController extends Controller
      */
     public function create()
     {
-        //
+        return view('organisasi.tambahdatarelawanorg');
     }
 
     /**
@@ -43,8 +47,21 @@ class DashboardOrganisasiVolunteersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'nama_relawan' => 'required',
+            'tgllahir_relawan' => 'required',
+            'usia_relawan' => 'required',
+            'jk_relawan' => 'required',
+            'alamat_relawan' => 'required',
+            'pekerjaan_relawan' => 'required',
+            'notelp_relawan' => 'required',
+            'email_relawan' => 'required|email:dns',
+            'username_relawan' => 'required|min:4'
+        ]);
+        Relawan::create($validatedData);
+        return redirect('/volunteer')->with('success', 'New data has been added');
     }
+
 
     /**
      * Display the specified resource.
@@ -52,9 +69,12 @@ class DashboardOrganisasiVolunteersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Relawan $detrelawanorg)
     {
-        //
+        $detailData = Relawan::find($detrelawanorg->id);
+        return view('organisasi.showdatarelawanorg', [
+            'relawan' => $detailData
+        ]);
     }
 
     /**
@@ -86,8 +106,9 @@ class DashboardOrganisasiVolunteersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Relawan $relawansorg)
     {
-        //
+        Relawan::destroy($relawansorg->id);
+        return redirect('/volunteersorg')->with('success', 'Data has been deleted');
     }
 }

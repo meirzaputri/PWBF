@@ -17,13 +17,13 @@ class CreateOrganisasisTable extends Migration
             $table->id();
             $table->foreignId('divisi_id')->onDelete('cascade')->onUpdate('cascade');
             $table->string('nama_organisasi');
-            $table->string('path');
+            $table->string('path')->nullable();
             $table->string('alamat_organisasi');
-            $table->string('email_organisasi')->unique();
+            $table->string('email_organisasi');
             $table->string('notelp_organisasi', 15);
             $table->string('username_organisasi',100)->unique();
             $table->string('password_organisasi', 100);
-            $table->text('deskripsi_organisasi');
+            $table->text('deskripsi_organisasi')->nullable();
             $table->boolean('status_organisasi');
             $table->timestamps();
         });

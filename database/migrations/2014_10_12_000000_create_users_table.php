@@ -21,15 +21,15 @@ class CreateUsersTable extends Migration
             $table->string('notelp', 13);
             $table->string('username')->unique();
             $table->string('password');
-
             $table->string('tgllhr_relawan')->nullable();
             $table->string('usia_relawan')->nullable();
             $table->boolean('jk_relawan')->nullable();
             $table->string('pekerjaan_relawan')->nullable();
             $table->boolean('stts_relawan')->nullable();
             $table->string('level');
+            $table->foreignId('divisi_id')->nullable();
             $table->foreignId('organisasi_id')->nullable();
-            
+
             $table->timestamps();
         });
     }

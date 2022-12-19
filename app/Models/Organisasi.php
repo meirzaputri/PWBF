@@ -40,4 +40,7 @@ class Organisasi extends Model
     {
         return $this->belongsToMany(Admin::class, AdminOrganisasi::class);
     }
+    public function user(){
+        return $this->hasOne(User::class);
+    }
 }
